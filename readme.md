@@ -1,6 +1,6 @@
 # Discover Durham - Ruby Rails Project 
 
-Updated: `11/06/2025 - 16:10`
+Updated: `11/06/2025 - 16:49`
 
 ## Description
 
@@ -116,6 +116,10 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
   + https://jgdm-projects.s3.eu-west-2.amazonaws.com/discover_durham/durham-fader-gallery/IMG_3816.JPG
 
 
+#### Ruby Dev
+
++ Typically deploymment is handled via websites like Render or Heroku.  The Ruby project install process usually adds its own local git repository but these can be bypassed with commands  `commands go here`
+
 <!-- 
             
 Attractions:
@@ -221,6 +225,18 @@ files live in the following location...  https://jgdm-projects.s3.eu-west-2.amaz
 
 #### Ruby Dev
 
-+ 
++ I think I'm now ready to start thinking about transferring this PHP website over to Ruby on Rails so it can live as a project there.
+
+The project exists as a static read-only site. No dynamic data, although it will read some content for a JSON data source.
+
+It uses one main image for a CSS background.
+
+It currently uses static PHP pages for HTML markup. 
+
+It has one main script file.
+
+SASS is generated at the project root.
+
+List the steps needed to take to set up a Ruby Rails project in a local repository... convert a static PHP project to Ruby views/Roots, and to deploy a Ruby project when ready.
 
 [Back to Top](#)
