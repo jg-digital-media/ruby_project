@@ -1,6 +1,6 @@
 # Discover Durham - Ruby Rails Project 
 
-Updated: `11/06/2025 - 16:49`
+Updated: `12/06/2025 - 11:25`
 
 ## Description
 
@@ -12,7 +12,7 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
 
 ## Task List  
 
-### Tasks `48` Completed `36` 
+### Tasks `61` Completed `36` 
 
 [Back to Top](#)
 
@@ -73,9 +73,21 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
 + Stage: Ruby on Rails Development
 
   + `TODO:` Plan steps and stages for converting PHP to Ruby Code
-
+  + `TODO:` Install Ruby and Rails
+  + `TODO:` Create the Ruby Project
+  + `TODO:` Setup the local repository for Ruby
+  + `TODO:` Start the development server
+  + `TODO:` Convert the PHP Pages
+  + `TODO:` move and hook up images and scripts
+  + `TODO:` move sass development from root to `app/assets/stylesheets/`
+  + `TODO:` Convert JavaScript to `app/javascript/`
+  + `TODO:` Convert JSON Data Source to be read by Ruby controller
+  + `TODO:` Add and convert meta elements from header template
+  + `TODO:` Test template locally
   + `TODO:` Need a simple but stylish map of Durham to include on homepage `index.php`
   + `TODO:` Edit and modify doorknocker image for website logo.
+  + `TODO:` Consider places for project deployment
+  + `TODO:` Deploy project
 
 ## Notes
 
@@ -119,6 +131,8 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
 #### Ruby Dev
 
 + Typically deploymment is handled via websites like Render or Heroku.  The Ruby project install process usually adds its own local git repository but these can be bypassed with commands  `commands go here`
+
++ As of 12-06-2026, ruby and rails are installed on my local machine. `ruby 3.4.6` and `rails 8.0.3`
 
 <!-- 
             
