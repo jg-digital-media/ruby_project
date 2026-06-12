@@ -1,6 +1,6 @@
 # Discover Durham - Ruby Rails Project 
 
-Updated: `12/06/2025 - 11:25`
+Updated: `12/06/2025 - 12:04`
 
 ## Description
 
@@ -180,9 +180,7 @@ image:  .image_gallery_item_homepage
 h4  - hovering over this element triggers the corresponding transition
 ```
 
-
 + in `landmarks.php`, we need a similar effect where the image element does the scale transition but the image doesn't bleed over the border.  Think it means implementing the borders on a container element rather than the image itself.  The transition should be triggered on the image itself and when hovering over the accompanying paragraph container.
-
 
 + on line 783 of sass.scss I've hadded a group of selectors that are designed to select and scale the images in the same way as landmarks.php but only need to be selected once rather than repeating selectors across multiple pages.  I'm struggling to find the right selectors to use for the scale transition
 
@@ -198,9 +196,7 @@ should work?
 
   + The scale effect isn't working on coffee.php
 
-
 + replace  contents of #js_ham_icon with a stylish animated icon that changes according to state.  
-
 
 + in about.php, using the format in .featured---highlights---container and it's item elements, retrieve 3 random instances from the featured-hightlights, json data file every 24 hours. Ensure no duplicate instances are returned at any one time. 
 
@@ -210,7 +206,6 @@ should work?
   + attractions.php
   + coffee.php
   + events.php
-
 
 + In about.php, what css selector do I need to lighten the background colour of h4 elements when hovering over .durham-featured-image elements?
 
