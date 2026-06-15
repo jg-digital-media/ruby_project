@@ -22,7 +22,14 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+
+  <%= render "shared/header" %>
+
+  <%= yield %>
+
+  <%= render "shared/footer" %>
+
+</body>
+  
 </html>

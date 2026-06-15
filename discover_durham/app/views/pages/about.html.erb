@@ -1,0 +1,63 @@
+<?php
+
+    $filename = "about.php";
+    $baseURL = "https://projects.jonniegrieve.co.uk/";
+    $route = "about"; // for ruby on rails
+
+    $page_id = "about";
+    $page_title = "About Durham City";
+    $html_title = "Discover Durham";
+    $website_title = "Discover Durham";
+    $preview_image = "https://projects.jonniegrieve.co.uk/social.png";
+    $preview_image_alt = "Welcome to Discover Durham";
+    $website_description = "Whether you're planning a visit, exploring the North East, or simply learning more about the city, Discover Durham offers a simple guide to landmarks, culture, food, and local life";
+    $meta_description = "Whether you're planning a visit, exploring the North East, or simply learning more about the city, Discover Durham offers a simple guide to landmarks, culture, food, and local life.";
+    $current_url = "https://projects.jonniegrieve.co.uk/discover-durham/about";
+
+    // get daily featured highlight elements - about.php
+    require_once __DIR__ . '/assets/includes/featured-highlights.php';
+    $featuredHighlights = get_daily_featured_highlights(3);
+?>
+
+<?php include "assets/template-parts/header.php"; ?>
+
+    <main>
+
+        <section class="about---page--container">
+
+            <h2>About "Discover Durham"</h2>
+
+            <p>Discover Durham is a Ruby on Rails based information website celebrating the historic City of Durham.</p>
+
+            <p>The clear highlight is the iconic Durham Cathedral and Castle. But there is so much more to explore from its cosy cafés, riverside walks, and local history. the site aims to showcase some of the places that make Durham unique.</p>
+
+            <p>Whether you're planning a visit, exploring the North East, or simply learning more about the city, Discover Durham offers a simple guide to landmarks, culture, food, and local life.</p>
+
+        </section>
+
+        <section class="featured---highlights---container">
+
+            <h3>Featured Highlights for today</h3>
+
+            <?php include "assets/template-parts/featured-highlights-container.php"; ?>
+
+        </section>
+
+        <section>
+
+            <article class="about---page--whydurham">
+
+                <h4>Why Durham?</h4> 
+                <p>Durham combines medieval history with a modern student city atmosphere, creating one of the most distinctive cities in the North East of England.</p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
+
+<?php include "assets/template-parts/footer.php"; ?>

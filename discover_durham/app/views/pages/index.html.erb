@@ -1,13 +1,86 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <style>
-      /* Email styles need to be inline */
-    </style>
-  </head>
+<main>
 
-  <body>
-    <%= yield %>
-  </body>
+    <section class="discover---durham--home_container">
+
+        <div class="discover---durham--home_fader" id="homeHeroFader" aria-hidden="true">
+            <div class="discover---durham--home_fader__slide is-active" style="background-image: url('https://jgdm-projects.s3.eu-west-2.amazonaws.com/discover_durham/durham-fader-gallery/IMG_0879.JPG');"></div> 
+            <div class="discover---durham--home_fader__slide" style="background-image: url('https://jgdm-projects.s3.eu-west-2.amazonaws.com/discover_durham/durham-fader-gallery/IMG_3816.JPG');"></div>
+            <div class="discover---durham--home_fader__slide" style="background-image: url('https://jgdm-projects.s3.eu-west-2.amazonaws.com/discover_durham/durham-fader-gallery/IMG_9636.JPG');"></div>
+            <div class="discover---durham--home_fader__slide" style="background-image: url('https://jgdm-projects.s3.eu-west-2.amazonaws.com/discover_durham/durham-fader-gallery/IMG_9566.JPG');"></div>
+            <div class="discover---durham--home_fader__slide" style="background-image: url('https://jgdm-projects.s3.eu-west-2.amazonaws.com/discover_durham/durham-fader-gallery/IMG_8590.JPG');"></div>
+            <div class="discover---durham--home_fader__slide" style="background-image: url('https://jgdm-projects.s3.eu-west-2.amazonaws.com/discover_durham/durham-fader-gallery/IMG_8484.JPG');"></div>
+            <div class="discover---durham--home_fader__slide" style="background-image: url('https://jgdm-projects.s3.eu-west-2.amazonaws.com/discover_durham/durham-fader-gallery/IMG_8463.JPG');"></div>
+            <div class="discover---durham--home_fader__slide" style="background-image: url('https://jgdm-projects.s3.eu-west-2.amazonaws.com/discover_durham/durham-fader-gallery/IMG_8519.JPG');"></div>
+        </div>
+        
+        <h2>Welcome to "Discover Durham". Your Guide to the heart of the North East - The City of Durham</h2>        
+
+        <button type="button" class="discover---durham--all-about-durham" id="allaboutdurham_btn">All about Durham</button>
+
+    </section>
+
+    <section class="discover---durham--container-second">
+        
+        <h3>Durham is a beautiful city. It is my home.</h3>
+
+        <article class="discover---durham--article">
+            
+            <p>This iconic city is seeped in history, spirituality and beauty with plenty to see for all.</p>
+
+            <br />
+            <p>Take a look at what Durham has to offer.</p>
+
+        </article>  
+
+    </section>
+
+    <section class="discover---durham--container-images">
+        
+        <article class="discover---durham--article_gallery_container">  
+
+            <div class="discover---durham--section-containers">
+
+                <div class="discover---durham--image_gallery_clip">
+                    <%= image_tag "discover-durham-history.jpg",
+              loading: "lazy",
+              class: "image_gallery_item_homepage",
+              alt: "History",
+              title: "History" %> />
+                </div>
+                <h4><%= link_to "History", history_path %></h4>
+            </div> 
+            
+            <div class="discover---durham--section-containers">
+
+                <div class="discover---durham--image_gallery_clip">
+                    <%= image_tag "discover-durham-landmarks.jpg",
+              loading: "lazy",
+              class: "image_gallery_item_homepage",
+              alt: "Durham Landmarks",
+              title: "Durham Landmarks" %> />
+                </div>
+                <h4><%= link_to "Attractions", attractions_path %></h4>
+            </div> 
+            
+            <div class="discover---durham--section-containers">
+
+                <div class="discover---durham--image_gallery_clip">
+                    <%= image_tag "discover-durham-events.jpg",
+              loading: "lazy",
+              class: "image_gallery_item_homepage",
+              alt: "Events",
+              title: "Events" %> />
+                </div>
+                <h4><%= link_to "Events", history_path %></h4>
+            </div>
+            
+        </article>
+
+    </section>
+
+   #=begin  <?php include "assets/template-parts/all-about-durham-modal.php"; ?> =end
+
+</main>
+
+</body>
 </html>
