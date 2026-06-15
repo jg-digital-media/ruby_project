@@ -1,0 +1,1461 @@
+
+@import "assets/sass/head";
+
+/* Update Time:  11/06/2026 - 13:28 */
+
+* {
+
+    padding: 0;
+    margin: 0;
+}
+
+// config variables
+$font---size--var-h1: 30pt; // 37pt
+$font---size--var-h2: 24px;
+$font---size--var-h3: 18pt;
+$font---size--var-h4: 16px;
+
+$font---size--sm: 12px;
+$font---size--md: 14px;
+$font---size--lg: 16px;
+
+$breakpoint--lg: 980px;
+$breakpoint--md: 680px;
+$breakpoint--sm: 420px;
+
+$background---primary: #edffd5; //#ffffff;
+$background---secondary: #800101;
+$background---tertiary: #f9ffd9;
+
+$background---nav--url: #2a2a2a;
+$background---nav: #2a2a2a;
+$background---nav--hvr: #353535;
+$col---nav--primary: #ffffff;
+$col---nav: #ffffff;
+$col---nav--hvr: #eca6a6;
+
+$col---primary: #ffffff;
+$col---secondary: #800101;
+
+
+$col---href--primary: #ff9c94;
+$col---href--primary-hvr: #ffffff;
+$col---href--secondary: white;
+$col---href--secondary--hvr: #ffc1c1;
+
+$button---background: #ffffff;
+$button---background--hover: #b52c2c;
+
+$col---button: #b52c2c;
+$col---button--hover: #ffffff;
+
+$bg---button--primary: #d10707;
+$col---button--primary: #fdc0c0;
+$col---button--primary-hvr: #ffffff;
+
+$col---button--hamburger_icon: #ffffff;
+$col---button--hamburger_icon-hvr: #ff6a6a;
+
+$href---primary: #800101;
+$href---primary--hvr: #ad011f;
+
+$border---color--primary: white;
+$border---color--button: #750808;
+$border---color--hamburger_icon: #ff6a6a;
+
+$font---stack--raleway: Raleway, sans-serif;
+$font---stack--karla: Karla, arial, sans-serif;
+$font---stack--main: "Times New Roman", serif;
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+body {
+
+    background-image: url("assets/images/durham_map.png");
+    background-position: center;
+    background-clip: text;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+header {
+
+    display: block;
+    background: $background---secondary;
+    padding: 5px 4px;
+    height: 105px;
+    font-family: $font---stack--raleway;
+
+    .website---heading {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 84%;
+        margin: 0 auto;
+
+        @media screen and (max-width: $breakpoint--md) {
+
+            width: 85%;
+        }
+
+        .discover---durham--container {
+
+            display: flex;
+            margin: 0 auto;
+            align-items: center;
+            width: 69%;
+            padding: 0 33px;
+
+            @media screen and (max-width: $breakpoint--md) {
+
+                display: flex;
+                flex-direction: column;
+            }
+
+            h1 {
+
+                text-align: center;
+                font-size: $font---size--var-h1;
+                color: $col---primary;
+                
+                @media screen and (max-width: $breakpoint--md) {
+
+                    font-size: 18pt;
+                    margin: 2px 0;
+                }
+
+                p,
+                span {
+
+                    font-size: 9px;
+                    font-style: italic;  
+                    
+                    @media screen and (max-width: $breakpoint--md) {
+                   
+                        display: block;
+                    }
+                }
+            }
+
+            #discover---durham--logo {
+
+                width: 85px;
+                padding: 0 45px;
+                margin: 0px auto;  
+
+                @media (max-width: $breakpoint--md) {
+
+                    width: 60px;
+                    margin: 0 auto;
+
+                }
+
+            
+            }
+
+        }  
+
+    }
+
+    .hamburger---menu--container {
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        color: $col---button--hamburger_icon;
+        transition: color 0.25s ease, transform 0.25s ease;
+        
+        cursor: pointer;
+
+        &:hover {
+
+            color: $col---button--hamburger_icon-hvr;
+            transform: scale(1.05);
+        }
+
+        &.active {
+
+            color: $col---button--hamburger_icon-hvr;
+            transition: color .3s;
+
+            &:hover  {
+
+                color: $col---button--hamburger_icon;
+            }
+
+
+        }
+
+        .hamburger---icon {
+
+            position: relative;
+            display: block;
+            width: 26px;
+            height: 18px;
+          
+        }
+
+        .hamburger---icon--line {
+
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: currentColor;
+            border-radius: 2px;
+            transform-origin: center;
+            transition:
+                transform 0.32s cubic-bezier(0.4, 0, 0.2, 1),
+                top 0.32s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.2s ease,
+                width 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:nth-child(1) {
+
+                top: 10px;
+                transform: rotate(45deg);
+            }
+
+            &:nth-child(2) {
+
+                top: 20px;
+                transform: scaleX(0);
+            }
+
+            &:nth-child(3) {
+
+                top: 10px;
+                transform: rotate(-45deg);
+            }
+        }
+
+        &.active .hamburger---icon--line {
+
+            &:nth-child(1) {
+
+                top: 0px;
+                transform: rotate(0deg);
+            }
+
+            &:nth-child(2) {
+
+                opacity: 1;
+                transform: scaleX(1);
+                top: 10px;
+            }
+
+            &:nth-child(3) {
+
+                top: 20px;
+                transform: rotate(0deg);
+            }
+        }
+    }    
+
+    #js---ham_icon {
+
+        @media screen and (max-width: $breakpoint--sm) {
+
+            display: none;
+        }
+    }
+
+    h1 {
+
+        color: $col---primary;
+    }
+
+}
+
+nav.main---navigation--container {
+
+    display: block;
+    font-family: $font---stack--raleway;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 175px;
+    background: $background---nav;
+    border-right: 2px solid $border---color--hamburger_icon;
+    opacity: 1;
+    z-index: 10000;
+
+    transition: opacity .4s;
+
+    &.active {
+
+        opacity: 0;        
+        z-index: -1;
+    }
+
+    ul {    
+
+        margin: 0;
+        padding: 10pt 2px;
+
+        li:first-child {
+
+            display: inline-block;
+            margin: 0 auto;
+            width: 36%;
+            left: 20%;
+            position: relative;
+            border-bottom: solid 3px $border---color--primary;
+            text-align: center;
+        }
+
+        li {
+
+            line-height: 3.2;
+            font-size: 14px;
+            border-bottom: solid #222222 1px;
+
+            transition: background .3s;
+
+            &:hover {
+
+                background: #353535;
+            }
+
+            &:not(:first-child) a {
+
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .nav---icon {
+
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 16px;
+                height: 16px;
+                flex-shrink: 0;
+                color: $col---nav--hvr;
+                transition: color 0.3s ease, transform 0.3s ease;
+
+                svg {
+
+                    width: 100%;
+                    height: 100%;
+                    fill: currentColor;
+                }
+            }
+
+            a {
+
+                text-decoration: none;
+                color: $col---nav;
+
+                transition: color .3s;
+
+                &.active,
+                &:hover {
+
+                    color: $col---nav--hvr;
+
+                    .nav---icon {
+
+                        color: $col---primary;
+                        transform: scale(1.08);
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+
+    content: "main element";
+    font-family: $font---stack--raleway;
+    font-family: $font---stack--karla;
+
+    section {
+
+        h2 {
+
+            text-align: center;
+            color: $col---secondary;
+            margin-top: 22pt;
+            font-size: $font---size--var-h2;
+        }
+    }
+
+    section.discover---durham--home_container {
+        
+        position: relative;
+        overflow: hidden;
+        background: $background---primary;
+        background-image: url("https://jg-photography.s3.eu-west-2.amazonaws.com/photography/images/2025/canon_2025/nov/durham_cathedraltower/IMG_3816.JPG");
+        background-size: cover;
+        background-position: center center;
+        background-size: 100% 129%;
+        height: 100%;
+        min-height: 425px;
+        
+        border-top: solid #8b8b8b 1px;
+        border-bottom: solid #8b8b8b 1px;
+
+        .discover---durham--home_fader {
+
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+
+        .discover---durham--home_fader__slide {
+
+            position: absolute;
+            inset: 0;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 100% 129%;
+            background-size: cover;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            will-change: opacity;
+
+            &.is-active {
+
+                opacity: 1;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+
+            width: 100%;
+        }
+
+        h2 {
+
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            position: relative;
+            top: 15px;
+            /* font-size: 16pt; */
+            font-size: $font---size--var-h2;
+            font-size: 16pt;
+            text-align: left;
+            width: 600px;
+            background: #444444a8; // custom            
+            color: $col---primary;
+            font-style: italic;
+            padding: 13px 25px;
+            font-family: $font---stack--karla;
+
+            @media screen and (max-width: $breakpoint--md) {
+
+                font-size: 3vw;
+                width: 90%;
+                padding: 13px 15px;
+            }
+
+            @media screen and (max-width: $breakpoint--sm) {
+
+                font-size: 4.5vw;
+            }          
+
+        }
+
+        #allaboutdurham_btn {
+
+            position: relative;
+            top: 190px;
+            z-index: 1;
+            display: block;
+            margin: 5px auto;
+            background: $bg---button--primary;
+            color: $col---button--primary;
+            padding: 9px;
+            border-radius: 6px;
+            border: solid 2px $border---color--button;
+            /* width: 120px; */
+            width: auto;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: $font---stack--karla;
+            letter-spacing: 0px;
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: background .3s, color .3s, border .3s, transform .1s;
+
+            &:hover {
+
+                color: $col---button--primary-hvr;
+                border: solid 2px #bb0120;
+                transform: scale(1.05);
+
+            }
+
+        }
+
+    }
+
+    // modal
+    .discover---durham--modal {
+
+        position: fixed;
+        inset: 0;
+        z-index: 11000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+
+        &.active {
+
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        &__overlay {
+
+            position: absolute;
+            inset: 0;
+            background: rgba(20, 20, 20, 0.72);
+            cursor: pointer;
+        }
+
+        &__content {
+
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 520px;
+            max-height: 85vh;
+            overflow-y: auto;
+            padding: 28px 24px 24px;
+            background: #fff4f4;
+            border: solid 2px $background---secondary;
+            border-radius: 10px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28);
+            font-family: karla, sans-serif;
+            /* color: #5a1a1a; */
+            color: $col---secondary;
+            line-height: 1.7;
+            transform: translateY(12px) scale(0.98);
+            transition: transform 0.3s ease;
+
+            h3 {
+
+                margin-bottom: 14px;
+                color: $background---secondary;
+                font-size: 22px;
+                padding-right: 28px;
+                text-align: center;
+            }
+
+            p {
+
+                margin-bottom: 14px;
+                font-size: 15px;
+                color: $col---secondary;
+            }
+
+            a {
+
+                color: $background---secondary;
+                font-weight: bold;
+                transition: color 0.2s ease;
+
+                &:hover {
+
+                    color: $href---primary--hvr;
+                }
+            }
+        }
+
+        &.active &__content {
+
+            transform: translateY(0) scale(1);
+        }
+
+        &__close {
+
+            position: absolute;
+            top: 10px;
+            right: 12px;
+            width: 32px;
+            height: 32px;
+            border: none;
+            border-radius: 50%;
+            background: $background---secondary;
+            color: $col---primary;
+            font-size: 22px;
+            line-height: 1;
+            cursor: pointer;
+            transition: background 0.2s ease, transform 0.2s ease;
+
+            &:hover {
+
+                background: #ad011f;
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .discover---durham--container-second {
+
+        display: flex;
+        flex-direction: column;
+        margin: 30px auto;
+        align-items: center;   
+        background: url("assets/images/Durham_UK_location_map_bg.png");
+        background: none;
+        color: $col---secondary;
+        background-size: 100% 100%;
+        width: 320px;
+        padding: 15px 35px;
+        border-bottom: solid #890c0c 3px;
+
+        @media screen and (max-width: $breakpoint--md) {
+
+            width: 85%;
+            padding: 0 10px;
+            
+        } 
+
+        h3 {
+
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 18pt; 
+            font-size: 18pt; 
+            
+            @media screen and (max-width: $breakpoint--md) {
+
+                margin-bottom: 10px;
+
+            }
+        }
+
+        article.discover---durham--article {
+
+            padding: 2px;
+            width: auto;
+            flex-direction: column;
+
+            p {
+
+                text-align: center;
+                font-size: 13pt;
+
+
+            }
+
+        }
+
+    }
+
+    .discover---durham--container-images {
+
+        width: 80%;
+        padding: 0 25px;
+        margin: 12px auto;
+        text-align: center;
+
+        .discover---durham--article_gallery_container {
+
+            div.discover---durham--section-containers {
+                
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 10px;
+
+                .discover---durham--image_gallery_clip {
+
+                    width: 200px;
+                    height: 200px;
+                    overflow: hidden;
+                    border: solid 2px #890c0c;
+                    border-radius: 6px;
+                    transition: border-color 0.3s ease;
+
+                    @media screen and (max-width: $breakpoint--lg) {
+
+                        width: 90%;
+                    }
+
+                    @media screen and (max-width: $breakpoint--md) {
+
+                        width: 100%;
+                    }
+
+                }
+
+                .image_gallery_item_homepage {
+
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    object-fit: cover;
+                    transform: scale(1);
+                    transform-origin: center center;
+                    transition: transform 0.3s ease;
+                }
+
+                &:has(h4 a:hover) .image_gallery_item_homepage,
+                &:has(a:focus-visible) .image_gallery_item_homepage {
+
+                    transform: scale(1.08);
+                }
+
+                &:has(h4 a:hover) .discover---durham--image_gallery_clip,
+                &:has(a:focus-visible) .discover---durham--image_gallery_clip {
+
+                    border-color: #fb9e9e;
+                }
+
+                h4 {
+
+                    a {
+
+                        display: inline-block;
+                        color: $col---button;
+                        text-decoration: none;
+
+                        padding: 8px;
+                        background: $button---background;
+                        border: solid $border---color--button 2px;
+                        border-radius: 6px;
+                        margin: 10px auto;
+                        font-size: 13px;
+                        font-weight: normal;
+
+                        transition: background .4s, color .4s;
+
+                        &:hover {
+
+                            background: $button---background--hover;
+                            color: $col---button--hover;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    // About - about.php page
+    .about---page--container {
+
+        display: block;
+        margin: 30px auto;
+        width: 45%;
+        border: solid #890c0c 2px;
+        border-radius: 7px;
+        align-items: center;
+        background: lighten($background---primary, 2%);
+        background: url("assets/images/Durham_UK_location_map_bg.png");
+        background: #fff5deb5;
+        background-size: cover;
+        color: $col---secondary;
+
+        @media screen and (max-width: $breakpoint--md) {
+
+            width: 85%;
+            padding: 0 10px;
+            
+        }
+
+        h2 {
+
+            font-size: $font---size--var-h2;
+            text-align: center;
+        }
+
+        p {
+
+            font-size: $font---size--lg;
+            margin-bottom: 26pt;
+            line-height: 1.7;
+            padding: 8px;
+        }
+    }
+
+    .featured---highlights---container {
+
+        display: block;
+        width: auto;
+        margin: 0 auto;
+        text-align: center;
+
+        @media screen and (max-width: 768px) {
+
+            width: 100%;
+        }
+
+        h3 {
+
+            text-align: center;
+            border-bottom: solid $border---color--button 1px;
+        }
+
+        .discover---durham--featured-item {
+
+            display: inline-block;
+            width: 225px;
+            vertical-align: top;
+            margin: 24px 15px;
+
+            @media screen and (max-width: 768px) {
+
+                width: 27%;
+            }
+
+            @media screen and (max-width: 580px) {
+
+                width: 77%;
+                display: block;
+                margin: 15px auto;
+            }
+
+            content: ".discover---durham--featured-item";
+
+            p {
+
+                content: "p - .discover---durham--featured-item";
+                font-size: 14px;
+                color: #800101;
+                padding: 8px 10px;
+                text-align: left;
+            }
+
+            .featured---image--clip {
+
+                width: 100%;
+                height: 160px;
+                overflow: hidden;
+                border-bottom: solid 1px #9b9b9b;
+                border-bottom: solid 3px #800101;
+
+                img.durham-featured-image {
+
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    object-fit: cover;
+                    transform: scale(1);
+                    transform-origin: center center;
+                    transition: transform 0.3s ease;
+
+                    @media screen and (max-width: 768px) {
+
+                        width: 80%;
+                        width: 100%;
+                    }
+
+                    @media screen and (max-width: 580px) {
+
+                        width: 100%;
+                    }
+                }
+
+            }
+
+            &:has(p:hover) .featured---image--clip img,
+            &:has(img:hover) .featured---image--clip img {
+
+                transform: scale(1.08);
+            }
+
+            &:has(.durham-featured-image:hover) h4,
+            &:has(.featured---image--clip:hover) h4 {
+
+                background: lighten($background---secondary, 25%);
+            }
+
+            h4 {
+
+                background: $background---secondary;
+                padding: 5px 15px;
+                text-align: center;
+                color: $col---primary;
+                border-top-right-radius: 8px;
+                border-top-left-radius: 8px;
+                transition: background 0.3s ease;
+
+                @media screen and (max-width: 768px) {
+
+                    font-size: 2vw;
+                } 
+                
+                @media screen and (max-width: 580px) {
+
+                    font-size: 3vw;
+                }
+            }
+        }
+    }
+
+    .about---page--whydurham {
+
+        display: block;
+        margin: 29px auto;
+        width: 320px;
+
+        h4 {
+
+            text-align: center;
+            background:  red;
+            background: $background---secondary;
+            border-bottom: 2px solid $border---color--button;
+            padding: 6px 10px;
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+            color: $col---primary;
+            font-size: $font---size--var-h4;
+        }
+
+        p {
+
+            line-height: 1.6;
+            font-size: 14px;
+            color: #800101; 
+            background: #fff5deb5;           
+            padding: 10px;
+            font-weight: bold;
+        }
+
+    }
+
+    // History - durham history.php page
+    .history---page--container {
+
+        h2 {
+
+            text-align: center;
+            color: $col---secondary;
+        }
+
+    }
+
+    .durham---history {
+
+        display: block;
+        width: 400px;
+        margin: 6px auto;
+
+        color: $col---secondary;
+
+        display: block;
+        width: 980px;
+
+        .durham---history--item {
+
+            display: inline-block;
+            width: 300px;
+            margin: 10px 11px;
+            vertical-align: top;
+
+            &:hover {
+
+                /* transition: background .3s; */
+
+                > h3 {
+                
+                    background: lighten($background---secondary, 25%);
+                }
+            }
+
+            h3 {
+
+                text-align: center;
+                font-size: $font---size--var-h4;
+                padding: 5px 0;
+                background: $background---secondary;
+                color: $col---primary;
+                border-top-right-radius: 6px;
+                border-top-left-radius: 6px;
+
+                transition: background .3s;
+            }
+
+            p {
+
+                padding: 7px;
+                background: $background---tertiary;
+                border-bottom-right-radius: 6px;
+                border-bottom-left-radius: 6px;
+                font-size: $font---size--sm;
+                line-height: 1.8;
+                min-height: 120px;
+            }
+
+        }
+
+        .arrow-right {
+
+            display: inline-block;
+            width: auto;
+            vertical-align: middle;
+        }
+    }
+
+    // Landmarks - landmarks.php page
+    .landmarks---page--container {
+
+        h2 {
+
+            text-align: center;
+            color: $col---secondary;
+            margin-top: 22pt;
+        }
+
+        .landmarks---page--intro {
+
+            
+        }
+
+        .discover---durham--landmark {            
+
+            transition: background .3s;
+
+            &:hover {
+
+                transition: background .3s;
+
+                h3 {
+
+                    background: lighten($background---secondary, 25%);
+                }
+
+            }
+           
+            
+            &:first-child {
+
+                margin-top: 20pt;
+            }
+
+
+            h3 {
+
+                transition: background .3s;
+                background: $background---secondary;
+                color: $col---primary;
+            }
+
+            .landmarks---image--clip {
+
+                width: 190px;
+                overflow: hidden;
+                border-radius: 2px;
+                border-top: none;
+                border-left: solid 1px #9b9b9b;
+                border-right: solid 1px #9b9b9b;
+                border-bottom: solid 1px #9b9b9b;
+            }
+
+            img.durham---landmark--image {
+
+                width: 100%;
+                height: auto;
+                display: block;
+                object-fit: cover;
+                transform: scale(1);
+                transform-origin: center center;
+                transition: transform 0.3s ease;
+            }
+
+            &:has(p:hover) img.durham---landmark--image,
+            &:has(.durham---landmark--image:hover) img.durham---landmark--image {
+
+                transform: scale(1.08);
+            }
+
+            p {
+
+                padding: 20px 10px;
+                line-height: 1.6;
+            }            
+
+        }        
+
+    }
+
+    // Events - events.php page
+    .events---page--container {
+
+        h2 {
+
+            content: "body main section h2";
+
+        }
+
+        .events---page--intro {         
+
+
+        }
+
+        .discover---durham--events {           
+
+            div {
+
+                .durham---events--image {
+
+                    width: 190px;
+                    height: auto;
+                    border-radius: 2px;
+                }
+
+            }
+
+            p {
+
+                padding: 20px 10px;
+                line-height: 1.6;
+            }
+        }
+    }
+
+    // Coffee - Dining coffee.php page
+    .coffee---page--container {
+
+        .coffee---image--clip {
+
+            width: 190px;
+            overflow: hidden;
+            border-radius: 2px;
+            border-top: none;
+            border-left: solid 1px #9b9b9b;
+            border-right: solid 1px #9b9b9b;
+            border-bottom: solid 1px #9b9b9b;
+
+            .durham---coffee--image {
+
+                width: 100%;
+                height: auto;
+                display: block;
+                object-fit: cover;
+                transform: scale(1);
+                transform-origin: center center;
+                transition: transform 0.3s ease;
+            }
+        }
+    }
+
+    // Generalised page styles - landmarks, events, coffee pages
+    .landmarks---page--container,
+    .events---page--container,
+    .coffee---page--container {
+
+        aside {
+
+            display: block;
+            width: 360px;
+            margin: 22px auto;
+            border-top: solid 3px #800101;
+            border-radius: 0;
+
+            @media screen and (max-width: $breakpoint--md) {
+
+
+            }
+
+            p {
+
+                text-align: center;
+                font-weight: bold;
+                padding: 8px;
+                line-height: 1.6;
+                color: #800101;
+            }
+
+        }
+
+        article {
+
+            display: flex;
+            flex-direction: row;
+            margin: 10pt auto;
+            width: 65%;
+            color: #800101;
+
+            @media screen and (max-width: $breakpoint--md) {
+
+                flex-direction: column;
+            }
+
+            &:hover div h3 {
+
+                background: lighten($background---secondary, 25%);
+            }
+
+            div {
+
+                h3 {
+
+                    background: $background---secondary;
+                    color: $col---primary;
+                    text-align: center;
+                    padding: 5px 0;
+                    font-size: 11pt;
+                    border-top-right-radius: 5px;
+                    border-top-left-radius: 5px;
+                    transition: background 0.3s ease;
+                }
+
+                [class*="---image--clip"] {
+
+                    width: 190px;
+                    overflow: hidden;
+                    border-radius: 2px;
+                    border-top: none;
+                    border-left: solid 1px #9b9b9b;
+                    border-right: solid 1px #9b9b9b;
+                    border-bottom: solid 1px #9b9b9b;
+
+                    @media screen and (max-width: $breakpoint--md) {
+
+                        width: 100%;
+                    }
+
+                    img {
+
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                        object-fit: cover;
+                        transform: scale(1);
+                        transform-origin: center center;
+                        transition: transform 0.3s ease;
+                    }
+                }
+            }
+
+            &:has(p:hover) div [class*="---image--clip"] img,
+            &:has(img:hover) div [class*="---image--clip"] img {
+
+                transform: scale(1.08);
+            }
+
+            p {
+
+                padding: 20px 10px;
+                line-height: 1.6;
+
+                a {                  
+
+                    font-size: 12px;
+                    margin: 0 6px;
+                    font-style: italic;
+                    color: $col---href--secondary;
+                    padding: 5px;
+                    background: $background---secondary;
+                    border-radius: 7px;
+                    cursor: pointer;
+                    text-decoration: none;
+
+                    transition: background .3s;
+
+                    &:hover {
+
+                        background: #fff1f1;
+                        color: red;
+                        border: solid 1px red;
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+    }
+
+    // Links - links.php page
+    .links---page--container {
+
+        h2 {
+
+            text-align: center;
+        }
+
+        .links---page--intro {
+
+            content: "links---page--container aside";
+            text-align: center;
+
+            p {
+
+                margin-top: 15pt;
+                color: $col---secondary;
+                font-weight: bold;
+            }
+        }
+
+        article.discover---durham--links {
+
+            content: "links---page--container article";
+
+            div.durham---links--container {
+
+                display: block;
+                width: 350px;
+                margin: 15px auto;
+
+                content: "durham---links--container";
+
+            
+                ul {
+
+                    li {
+
+                        background: #5a0000a1;
+                        margin: 10px 6px;
+                        padding: 10px 6px;
+                        border-radius: 8px;
+                        list-style: none;
+
+                        transition: background .3s;
+
+                        &:hover {
+                                                   
+                            background: #780606;
+                        }
+
+                        a {
+
+                            color: $col---href--secondary;
+                            font-weight: bold;
+                            padding: 5px 0;
+                            text-decoration: none;
+                            padding: 0 20px;
+
+                            transition: color .3s;
+
+                            &:hover {
+
+                                color: $col---href--secondary--hvr;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    // Disclaimer - disclaimer.php page
+    .disclaimer---page--container {
+
+        width: 400px;
+        margin: 6px auto;
+        color: #800101;
+        font-weight: bold;
+
+
+        h3 {
+
+            color: #800101;
+            font-size: 20pt;
+            margin-top: 10px;
+            text-align: center;
+
+        }
+
+        p {
+
+            line-height: 1.8;
+            font-size: 14px;
+            margin: 13px 0;
+        }
+
+        ul {
+
+            width: 85%;
+            font-size: 14px;
+            line-height: 1.6;
+            position: relative;
+            left: 7%;
+            
+        }
+
+        h4 {
+
+            padding: 7px;
+            border-radius: 7px;
+            background: #800101;
+            color: white;
+            display: inline-block;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        
+    }
+
+
+}
+
+body.modal-open {
+
+    overflow: hidden;
+}
+
+footer {
+
+    border-top: solid gray 1px;
+
+    text-align: center; 
+    font-family: $font---stack--raleway;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: karla;
+    color: white;
+    background: $background---secondary;
+
+    h4 {
+
+        text-align: center;
+    }
+
+    p:first-child {
+
+        padding-top: 10px;
+    }
+
+
+    p {
+
+        font-size: $font---size--sm;
+
+        a {
+
+            color: $col---href--primary;
+
+            transition: color .3s;
+
+            &:hover {
+
+                color: $col---href--primary-hvr;
+            }
+
+        }
+
+    }
+
+    p:last-child {
+
+        padding: 10px 0;
+    }
+
+}

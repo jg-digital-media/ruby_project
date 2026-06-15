@@ -1,0 +1,1018 @@
+/* 
+*  "Discover Durham" - Stylesheet (style.css) assets/sass/_head"; 
+*  Built in HTML and CSS - Deployed in Ruby Rails - May 2026
+*   
+*  By Jonnie Grieve @jg_digitalMedia - https://www.jonniegrieve.co.uk
+*/
+/* Update Time:  11/06/2026 - 13:28 */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("assets/images/durham_map.png");
+  background-position: center;
+  background-clip: text;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  display: block;
+  background: #800101;
+  padding: 5px 4px;
+  height: 105px;
+  font-family: Raleway, sans-serif;
+}
+header .website---heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 84%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 680px) {
+  header .website---heading {
+    width: 85%;
+  }
+}
+header .website---heading .discover---durham--container {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  width: 69%;
+  padding: 0 33px;
+}
+@media screen and (max-width: 680px) {
+  header .website---heading .discover---durham--container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+header .website---heading .discover---durham--container h1 {
+  text-align: center;
+  font-size: 30pt;
+  color: #ffffff;
+}
+@media screen and (max-width: 680px) {
+  header .website---heading .discover---durham--container h1 {
+    font-size: 18pt;
+    margin: 2px 0;
+  }
+}
+header .website---heading .discover---durham--container h1 p,
+header .website---heading .discover---durham--container h1 span {
+  font-size: 9px;
+  font-style: italic;
+}
+@media screen and (max-width: 680px) {
+  header .website---heading .discover---durham--container h1 p,
+  header .website---heading .discover---durham--container h1 span {
+    display: block;
+  }
+}
+header .website---heading .discover---durham--container #discover---durham--logo {
+  width: 85px;
+  padding: 0 45px;
+  margin: 0px auto;
+}
+@media (max-width: 680px) {
+  header .website---heading .discover---durham--container #discover---durham--logo {
+    width: 60px;
+    margin: 0 auto;
+  }
+}
+header .hamburger---menu--container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: #ffffff;
+  transition: color 0.25s ease, transform 0.25s ease;
+  cursor: pointer;
+}
+header .hamburger---menu--container:hover {
+  color: #ff6a6a;
+  transform: scale(1.05);
+}
+header .hamburger---menu--container.active {
+  color: #ff6a6a;
+  transition: color 0.3s;
+}
+header .hamburger---menu--container.active:hover {
+  color: #ffffff;
+}
+header .hamburger---menu--container .hamburger---icon {
+  position: relative;
+  display: block;
+  width: 26px;
+  height: 18px;
+}
+header .hamburger---menu--container .hamburger---icon--line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: currentColor;
+  border-radius: 2px;
+  transform-origin: center;
+  transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1), top 0.32s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease, width 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+}
+header .hamburger---menu--container .hamburger---icon--line:nth-child(1) {
+  top: 10px;
+  transform: rotate(45deg);
+}
+header .hamburger---menu--container .hamburger---icon--line:nth-child(2) {
+  top: 20px;
+  transform: scaleX(0);
+}
+header .hamburger---menu--container .hamburger---icon--line:nth-child(3) {
+  top: 10px;
+  transform: rotate(-45deg);
+}
+header .hamburger---menu--container.active .hamburger---icon--line:nth-child(1) {
+  top: 0px;
+  transform: rotate(0deg);
+}
+header .hamburger---menu--container.active .hamburger---icon--line:nth-child(2) {
+  opacity: 1;
+  transform: scaleX(1);
+  top: 10px;
+}
+header .hamburger---menu--container.active .hamburger---icon--line:nth-child(3) {
+  top: 20px;
+  transform: rotate(0deg);
+}
+@media screen and (max-width: 420px) {
+  header #js---ham_icon {
+    display: none;
+  }
+}
+header h1 {
+  color: #ffffff;
+}
+
+nav.main---navigation--container {
+  display: block;
+  font-family: Raleway, sans-serif;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 175px;
+  background: #2a2a2a;
+  border-right: 2px solid #ff6a6a;
+  opacity: 1;
+  z-index: 10000;
+  transition: opacity 0.4s;
+}
+nav.main---navigation--container.active {
+  opacity: 0;
+  z-index: -1;
+}
+nav.main---navigation--container ul {
+  margin: 0;
+  padding: 10pt 2px;
+}
+nav.main---navigation--container ul li:first-child {
+  display: inline-block;
+  margin: 0 auto;
+  width: 36%;
+  left: 20%;
+  position: relative;
+  border-bottom: solid 3px white;
+  text-align: center;
+}
+nav.main---navigation--container ul li {
+  line-height: 3.2;
+  font-size: 14px;
+  border-bottom: solid #222222 1px;
+  transition: background 0.3s;
+}
+nav.main---navigation--container ul li:hover {
+  background: #353535;
+}
+nav.main---navigation--container ul li:not(:first-child) a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+nav.main---navigation--container ul li .nav---icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  color: #eca6a6;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+nav.main---navigation--container ul li .nav---icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+nav.main---navigation--container ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+nav.main---navigation--container ul li a.active, nav.main---navigation--container ul li a:hover {
+  color: #eca6a6;
+}
+nav.main---navigation--container ul li a.active .nav---icon, nav.main---navigation--container ul li a:hover .nav---icon {
+  color: #ffffff;
+  transform: scale(1.08);
+}
+
+main {
+  content: "main element";
+  font-family: Raleway, sans-serif;
+  font-family: Karla, arial, sans-serif;
+}
+main section h2 {
+  text-align: center;
+  color: #800101;
+  margin-top: 22pt;
+  font-size: 24px;
+}
+main section.discover---durham--home_container {
+  position: relative;
+  overflow: hidden;
+  background: #edffd5;
+  background-image: url("https://jg-photography.s3.eu-west-2.amazonaws.com/photography/images/2025/canon_2025/nov/durham_cathedraltower/IMG_3816.JPG");
+  background-size: cover;
+  background-position: center center;
+  background-size: 100% 129%;
+  height: 100%;
+  min-height: 425px;
+  border-top: solid #8b8b8b 1px;
+  border-bottom: solid #8b8b8b 1px;
+}
+main section.discover---durham--home_container .discover---durham--home_fader {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+main section.discover---durham--home_container .discover---durham--home_fader__slide {
+  position: absolute;
+  inset: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 129%;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  will-change: opacity;
+}
+main section.discover---durham--home_container .discover---durham--home_fader__slide.is-active {
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  main section.discover---durham--home_container {
+    width: 100%;
+  }
+}
+main section.discover---durham--home_container h2 {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  position: relative;
+  top: 15px;
+  /* font-size: 16pt; */
+  font-size: 24px;
+  font-size: 16pt;
+  text-align: left;
+  width: 600px;
+  background: rgba(68, 68, 68, 0.6588235294);
+  color: #ffffff;
+  font-style: italic;
+  padding: 13px 25px;
+  font-family: Karla, arial, sans-serif;
+}
+@media screen and (max-width: 680px) {
+  main section.discover---durham--home_container h2 {
+    font-size: 3vw;
+    width: 90%;
+    padding: 13px 15px;
+  }
+}
+@media screen and (max-width: 420px) {
+  main section.discover---durham--home_container h2 {
+    font-size: 4.5vw;
+  }
+}
+main section.discover---durham--home_container #allaboutdurham_btn {
+  position: relative;
+  top: 190px;
+  z-index: 1;
+  display: block;
+  margin: 5px auto;
+  background: #d10707;
+  color: #fdc0c0;
+  padding: 9px;
+  border-radius: 6px;
+  border: solid 2px #750808;
+  /* width: 120px; */
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Karla, arial, sans-serif;
+  letter-spacing: 0px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, border 0.3s, transform 0.1s;
+}
+main section.discover---durham--home_container #allaboutdurham_btn:hover {
+  color: #ffffff;
+  border: solid 2px #bb0120;
+  transform: scale(1.05);
+}
+main .discover---durham--modal {
+  position: fixed;
+  inset: 0;
+  z-index: 11000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+main .discover---durham--modal.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+main .discover---durham--modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 20, 20, 0.72);
+  cursor: pointer;
+}
+main .discover---durham--modal__content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 520px;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 28px 24px 24px;
+  background: #fff4f4;
+  border: solid 2px #800101;
+  border-radius: 10px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28);
+  font-family: karla, sans-serif;
+  /* color: #5a1a1a; */
+  color: #800101;
+  line-height: 1.7;
+  transform: translateY(12px) scale(0.98);
+  transition: transform 0.3s ease;
+}
+main .discover---durham--modal__content h3 {
+  margin-bottom: 14px;
+  color: #800101;
+  font-size: 22px;
+  padding-right: 28px;
+  text-align: center;
+}
+main .discover---durham--modal__content p {
+  margin-bottom: 14px;
+  font-size: 15px;
+  color: #800101;
+}
+main .discover---durham--modal__content a {
+  color: #800101;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+main .discover---durham--modal__content a:hover {
+  color: #ad011f;
+}
+main .discover---durham--modal.active main .discover---durham--modal__content {
+  transform: translateY(0) scale(1);
+}
+main .discover---durham--modal__close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background: #800101;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+main .discover---durham--modal__close:hover {
+  background: #ad011f;
+  transform: scale(1.05);
+}
+main .discover---durham--container-second {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  align-items: center;
+  background: url("assets/images/Durham_UK_location_map_bg.png");
+  background: none;
+  color: #800101;
+  background-size: 100% 100%;
+  width: 320px;
+  padding: 15px 35px;
+  border-bottom: solid #890c0c 3px;
+}
+@media screen and (max-width: 680px) {
+  main .discover---durham--container-second {
+    width: 85%;
+    padding: 0 10px;
+  }
+}
+main .discover---durham--container-second h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18pt;
+  font-size: 18pt;
+}
+@media screen and (max-width: 680px) {
+  main .discover---durham--container-second h3 {
+    margin-bottom: 10px;
+  }
+}
+main .discover---durham--container-second article.discover---durham--article {
+  padding: 2px;
+  width: auto;
+  flex-direction: column;
+}
+main .discover---durham--container-second article.discover---durham--article p {
+  text-align: center;
+  font-size: 13pt;
+}
+main .discover---durham--container-images {
+  width: 80%;
+  padding: 0 25px;
+  margin: 12px auto;
+  text-align: center;
+}
+main .discover---durham--container-images .discover---durham--article_gallery_container div.discover---durham--section-containers {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px;
+}
+main .discover---durham--container-images .discover---durham--article_gallery_container div.discover---durham--section-containers .discover---durham--image_gallery_clip {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border: solid 2px #890c0c;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+@media screen and (max-width: 980px) {
+  main .discover---durham--container-images .discover---durham--article_gallery_container div.discover---durham--section-containers .discover---durham--image_gallery_clip {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 680px) {
+  main .discover---durham--container-images .discover---durham--article_gallery_container div.discover---durham--section-containers .discover---durham--image_gallery_clip {
+    width: 100%;
+  }
+}
+main .discover---durham--container-images .discover---durham--article_gallery_container div.discover---durham--section-containers .image_gallery_item_homepage {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transform: scale(1);
+  transform-origin: center center;
+  transition: transform 0.3s ease;
+}
+main .discover---durham--container-images .discover---durham--article_gallery_container div.discover---durham--section-containers:has(h4 a:hover) .image_gallery_item_homepage, main .discover---durham--container-images .discover---durham--article_gallery_container div.discover---durham--section-containers:has(a:focus-visible) .image_gallery_item_homepage {
+  transform: scale(1.08);
+}
+main .discover---durham--container-images .discover---durham--article_gallery_container div.discover---durham--section-containers:has(h4 a:hover) .discover---durham--image_gallery_clip, main .discover---durham--container-images .discover---durham--article_gallery_container div.discover---durham--section-containers:has(a:focus-visible) .discover---durham--image_gallery_clip {
+  border-color: #fb9e9e;
+}
+main .discover---durham--container-images .discover---durham--article_gallery_container div.discover---durham--section-containers h4 a {
+  display: inline-block;
+  color: #b52c2c;
+  text-decoration: none;
+  padding: 8px;
+  background: #ffffff;
+  border: solid #750808 2px;
+  border-radius: 6px;
+  margin: 10px auto;
+  font-size: 13px;
+  font-weight: normal;
+  transition: background 0.4s, color 0.4s;
+}
+main .discover---durham--container-images .discover---durham--article_gallery_container div.discover---durham--section-containers h4 a:hover {
+  background: #b52c2c;
+  color: #ffffff;
+}
+main .about---page--container {
+  display: block;
+  margin: 30px auto;
+  width: 45%;
+  border: solid #890c0c 2px;
+  border-radius: 7px;
+  align-items: center;
+  background: #f1ffdf;
+  background: url("assets/images/Durham_UK_location_map_bg.png");
+  background: rgba(255, 245, 222, 0.7098039216);
+  background-size: cover;
+  color: #800101;
+}
+@media screen and (max-width: 680px) {
+  main .about---page--container {
+    width: 85%;
+    padding: 0 10px;
+  }
+}
+main .about---page--container h2 {
+  font-size: 24px;
+  text-align: center;
+}
+main .about---page--container p {
+  font-size: 16px;
+  margin-bottom: 26pt;
+  line-height: 1.7;
+  padding: 8px;
+}
+main .featured---highlights---container {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  main .featured---highlights---container {
+    width: 100%;
+  }
+}
+main .featured---highlights---container h3 {
+  text-align: center;
+  border-bottom: solid #750808 1px;
+}
+main .featured---highlights---container .discover---durham--featured-item {
+  display: inline-block;
+  width: 225px;
+  vertical-align: top;
+  margin: 24px 15px;
+  content: ".discover---durham--featured-item";
+}
+@media screen and (max-width: 768px) {
+  main .featured---highlights---container .discover---durham--featured-item {
+    width: 27%;
+  }
+}
+@media screen and (max-width: 580px) {
+  main .featured---highlights---container .discover---durham--featured-item {
+    width: 77%;
+    display: block;
+    margin: 15px auto;
+  }
+}
+main .featured---highlights---container .discover---durham--featured-item p {
+  content: "p - .discover---durham--featured-item";
+  font-size: 14px;
+  color: #800101;
+  padding: 8px 10px;
+  text-align: left;
+}
+main .featured---highlights---container .discover---durham--featured-item .featured---image--clip {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  border-bottom: solid 1px #9b9b9b;
+  border-bottom: solid 3px #800101;
+}
+main .featured---highlights---container .discover---durham--featured-item .featured---image--clip img.durham-featured-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transform: scale(1);
+  transform-origin: center center;
+  transition: transform 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  main .featured---highlights---container .discover---durham--featured-item .featured---image--clip img.durham-featured-image {
+    width: 80%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 580px) {
+  main .featured---highlights---container .discover---durham--featured-item .featured---image--clip img.durham-featured-image {
+    width: 100%;
+  }
+}
+main .featured---highlights---container .discover---durham--featured-item:has(p:hover) .featured---image--clip img, main .featured---highlights---container .discover---durham--featured-item:has(img:hover) .featured---image--clip img {
+  transform: scale(1.08);
+}
+main .featured---highlights---container .discover---durham--featured-item:has(.durham-featured-image:hover) h4, main .featured---highlights---container .discover---durham--featured-item:has(.featured---image--clip:hover) h4 {
+  background: #fd0303;
+}
+main .featured---highlights---container .discover---durham--featured-item h4 {
+  background: #800101;
+  padding: 5px 15px;
+  text-align: center;
+  color: #ffffff;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  transition: background 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  main .featured---highlights---container .discover---durham--featured-item h4 {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 580px) {
+  main .featured---highlights---container .discover---durham--featured-item h4 {
+    font-size: 3vw;
+  }
+}
+main .about---page--whydurham {
+  display: block;
+  margin: 29px auto;
+  width: 320px;
+}
+main .about---page--whydurham h4 {
+  text-align: center;
+  background: red;
+  background: #800101;
+  border-bottom: 2px solid #750808;
+  padding: 6px 10px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+}
+main .about---page--whydurham p {
+  line-height: 1.6;
+  font-size: 14px;
+  color: #800101;
+  background: rgba(255, 245, 222, 0.7098039216);
+  padding: 10px;
+  font-weight: bold;
+}
+main .history---page--container h2 {
+  text-align: center;
+  color: #800101;
+}
+main .durham---history {
+  display: block;
+  width: 400px;
+  margin: 6px auto;
+  color: #800101;
+  display: block;
+  width: 980px;
+}
+main .durham---history .durham---history--item {
+  display: inline-block;
+  width: 300px;
+  margin: 10px 11px;
+  vertical-align: top;
+}
+main .durham---history .durham---history--item:hover {
+  /* transition: background .3s; */
+}
+main .durham---history .durham---history--item:hover > h3 {
+  background: #fd0303;
+}
+main .durham---history .durham---history--item h3 {
+  text-align: center;
+  font-size: 16px;
+  padding: 5px 0;
+  background: #800101;
+  color: #ffffff;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  transition: background 0.3s;
+}
+main .durham---history .durham---history--item p {
+  padding: 7px;
+  background: #f9ffd9;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  font-size: 12px;
+  line-height: 1.8;
+  min-height: 120px;
+}
+main .durham---history .arrow-right {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+}
+main .landmarks---page--container h2 {
+  text-align: center;
+  color: #800101;
+  margin-top: 22pt;
+}
+main .landmarks---page--container .discover---durham--landmark {
+  transition: background 0.3s;
+}
+main .landmarks---page--container .discover---durham--landmark:hover {
+  transition: background 0.3s;
+}
+main .landmarks---page--container .discover---durham--landmark:hover h3 {
+  background: #fd0303;
+}
+main .landmarks---page--container .discover---durham--landmark:first-child {
+  margin-top: 20pt;
+}
+main .landmarks---page--container .discover---durham--landmark h3 {
+  transition: background 0.3s;
+  background: #800101;
+  color: #ffffff;
+}
+main .landmarks---page--container .discover---durham--landmark .landmarks---image--clip {
+  width: 190px;
+  overflow: hidden;
+  border-radius: 2px;
+  border-top: none;
+  border-left: solid 1px #9b9b9b;
+  border-right: solid 1px #9b9b9b;
+  border-bottom: solid 1px #9b9b9b;
+}
+main .landmarks---page--container .discover---durham--landmark img.durham---landmark--image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transform: scale(1);
+  transform-origin: center center;
+  transition: transform 0.3s ease;
+}
+main .landmarks---page--container .discover---durham--landmark:has(p:hover) img.durham---landmark--image, main .landmarks---page--container .discover---durham--landmark:has(.durham---landmark--image:hover) img.durham---landmark--image {
+  transform: scale(1.08);
+}
+main .landmarks---page--container .discover---durham--landmark p {
+  padding: 20px 10px;
+  line-height: 1.6;
+}
+main .events---page--container h2 {
+  content: "body main section h2";
+}
+main .events---page--container .discover---durham--events div .durham---events--image {
+  width: 190px;
+  height: auto;
+  border-radius: 2px;
+}
+main .events---page--container .discover---durham--events p {
+  padding: 20px 10px;
+  line-height: 1.6;
+}
+main .coffee---page--container .coffee---image--clip {
+  width: 190px;
+  overflow: hidden;
+  border-radius: 2px;
+  border-top: none;
+  border-left: solid 1px #9b9b9b;
+  border-right: solid 1px #9b9b9b;
+  border-bottom: solid 1px #9b9b9b;
+}
+main .coffee---page--container .coffee---image--clip .durham---coffee--image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transform: scale(1);
+  transform-origin: center center;
+  transition: transform 0.3s ease;
+}
+main .landmarks---page--container aside,
+main .events---page--container aside,
+main .coffee---page--container aside {
+  display: block;
+  width: 360px;
+  margin: 22px auto;
+  border-top: solid 3px #800101;
+  border-radius: 0;
+}
+main .landmarks---page--container aside p,
+main .events---page--container aside p,
+main .coffee---page--container aside p {
+  text-align: center;
+  font-weight: bold;
+  padding: 8px;
+  line-height: 1.6;
+  color: #800101;
+}
+main .landmarks---page--container article,
+main .events---page--container article,
+main .coffee---page--container article {
+  display: flex;
+  flex-direction: row;
+  margin: 10pt auto;
+  width: 65%;
+  color: #800101;
+}
+@media screen and (max-width: 680px) {
+  main .landmarks---page--container article,
+  main .events---page--container article,
+  main .coffee---page--container article {
+    flex-direction: column;
+  }
+}
+main .landmarks---page--container article:hover div h3,
+main .events---page--container article:hover div h3,
+main .coffee---page--container article:hover div h3 {
+  background: #fd0303;
+}
+main .landmarks---page--container article div h3,
+main .events---page--container article div h3,
+main .coffee---page--container article div h3 {
+  background: #800101;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 11pt;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  transition: background 0.3s ease;
+}
+main .landmarks---page--container article div [class*="---image--clip"],
+main .events---page--container article div [class*="---image--clip"],
+main .coffee---page--container article div [class*="---image--clip"] {
+  width: 190px;
+  overflow: hidden;
+  border-radius: 2px;
+  border-top: none;
+  border-left: solid 1px #9b9b9b;
+  border-right: solid 1px #9b9b9b;
+  border-bottom: solid 1px #9b9b9b;
+}
+@media screen and (max-width: 680px) {
+  main .landmarks---page--container article div [class*="---image--clip"],
+  main .events---page--container article div [class*="---image--clip"],
+  main .coffee---page--container article div [class*="---image--clip"] {
+    width: 100%;
+  }
+}
+main .landmarks---page--container article div [class*="---image--clip"] img,
+main .events---page--container article div [class*="---image--clip"] img,
+main .coffee---page--container article div [class*="---image--clip"] img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transform: scale(1);
+  transform-origin: center center;
+  transition: transform 0.3s ease;
+}
+main .landmarks---page--container article:has(p:hover) div [class*="---image--clip"] img, main .landmarks---page--container article:has(img:hover) div [class*="---image--clip"] img,
+main .events---page--container article:has(p:hover) div [class*="---image--clip"] img,
+main .events---page--container article:has(img:hover) div [class*="---image--clip"] img,
+main .coffee---page--container article:has(p:hover) div [class*="---image--clip"] img,
+main .coffee---page--container article:has(img:hover) div [class*="---image--clip"] img {
+  transform: scale(1.08);
+}
+main .landmarks---page--container article p,
+main .events---page--container article p,
+main .coffee---page--container article p {
+  padding: 20px 10px;
+  line-height: 1.6;
+}
+main .landmarks---page--container article p a,
+main .events---page--container article p a,
+main .coffee---page--container article p a {
+  font-size: 12px;
+  margin: 0 6px;
+  font-style: italic;
+  color: white;
+  padding: 5px;
+  background: #800101;
+  border-radius: 7px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+main .landmarks---page--container article p a:hover,
+main .events---page--container article p a:hover,
+main .coffee---page--container article p a:hover {
+  background: #fff1f1;
+  color: red;
+  border: solid 1px red;
+  transform: scale(1.05);
+}
+main .links---page--container h2 {
+  text-align: center;
+}
+main .links---page--container .links---page--intro {
+  content: "links---page--container aside";
+  text-align: center;
+}
+main .links---page--container .links---page--intro p {
+  margin-top: 15pt;
+  color: #800101;
+  font-weight: bold;
+}
+main .links---page--container article.discover---durham--links {
+  content: "links---page--container article";
+}
+main .links---page--container article.discover---durham--links div.durham---links--container {
+  display: block;
+  width: 350px;
+  margin: 15px auto;
+  content: "durham---links--container";
+}
+main .links---page--container article.discover---durham--links div.durham---links--container ul li {
+  background: rgba(90, 0, 0, 0.631372549);
+  margin: 10px 6px;
+  padding: 10px 6px;
+  border-radius: 8px;
+  list-style: none;
+  transition: background 0.3s;
+}
+main .links---page--container article.discover---durham--links div.durham---links--container ul li:hover {
+  background: #780606;
+}
+main .links---page--container article.discover---durham--links div.durham---links--container ul li a {
+  color: white;
+  font-weight: bold;
+  padding: 5px 0;
+  text-decoration: none;
+  padding: 0 20px;
+  transition: color 0.3s;
+}
+main .links---page--container article.discover---durham--links div.durham---links--container ul li a:hover {
+  color: #ffc1c1;
+}
+main .disclaimer---page--container {
+  width: 400px;
+  margin: 6px auto;
+  color: #800101;
+  font-weight: bold;
+}
+main .disclaimer---page--container h3 {
+  color: #800101;
+  font-size: 20pt;
+  margin-top: 10px;
+  text-align: center;
+}
+main .disclaimer---page--container p {
+  line-height: 1.8;
+  font-size: 14px;
+  margin: 13px 0;
+}
+main .disclaimer---page--container ul {
+  width: 85%;
+  font-size: 14px;
+  line-height: 1.6;
+  position: relative;
+  left: 7%;
+}
+main .disclaimer---page--container h4 {
+  padding: 7px;
+  border-radius: 7px;
+  background: #800101;
+  color: white;
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+footer {
+  border-top: solid gray 1px;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: karla;
+  color: white;
+  background: #800101;
+}
+footer h4 {
+  text-align: center;
+}
+footer p:first-child {
+  padding-top: 10px;
+}
+footer p {
+  font-size: 12px;
+}
+footer p a {
+  color: #ff9c94;
+  transition: color 0.3s;
+}
+footer p a:hover {
+  color: #ffffff;
+}
+footer p:last-child {
+  padding: 10px 0;
+}
+
+/*# sourceMappingURL=style.css.map */
