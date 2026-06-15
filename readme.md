@@ -1,6 +1,6 @@
 # Discover Durham - Ruby Rails Project 
 
-Updated: `12/06/2025 - 12:04`
+Updated: `15/06/2025 - 16:00`
 
 ## Description
 
@@ -8,7 +8,7 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
 
 ## Sections
 
-## [Task List](#task-list) | [Notes](#notes) | [Prompts Used](#prompts-used)
+## [Task List](#task-list) | [Notes](#notes) | [Prompts Used](#prompts-used) | [Development Notes](#development-notes)
 
 ## Task List  
 
@@ -249,3 +249,16 @@ SASS is generated at the project root.
 List the steps needed to take to set up a Ruby Rails project in a local repository... convert a static PHP project to Ruby views/Roots, and to deploy a Ruby project when ready.
 
 [Back to Top](#)
+
+## Development Notes
+
++ `15/06/2026`
+
+    + `pages controller geneerated 'rails generate controller Pages'` - 
+    + `One functional route - first images and css file generated` -
+    + `layout templates added to /views/layouts/`
+
+  + As of today, for this stage of the development, I'm at a good stopping point, to make a first commit - by which I mean... I've generated a "Pages" Controller that is designed to render the HTML pages for the site.  I have 1 route working, and I have the stylesheet loading. This is a good start, but it's going to be very difficult for me to pick this all up again because I am going to be doing a lot of prompting, a lot of researching and a lot of going back and forth between the terminal and the browser and any AI prompts I have going.
+
+  + This is all okay. It's all a bit overwhelming, and it's a learning curve. I tried to do too much converting to begin with, including things that didn't necessarily need to be converted.  But I have a working root to build on, and hopefully I'll be able to build things from there.
+
