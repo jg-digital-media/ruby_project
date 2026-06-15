@@ -1,6 +1,6 @@
 # Discover Durham - Ruby Rails Project 
 
-Updated: `15/06/2025 - 16:00`
+Updated: `15/06/2025 - 16:46`
 
 ## Description
 
@@ -251,6 +251,7 @@ List the steps needed to take to set up a Ruby Rails project in a local reposito
 [Back to Top](#)
 
 ## Development Notes
+[Back to Top](#)
 
 + `15/06/2026`
 
