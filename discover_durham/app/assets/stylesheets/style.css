@@ -4,7 +4,7 @@
 *   
 *  By Jonnie Grieve @jg_digitalMedia - https://www.jonniegrieve.co.uk
 */
-/* Update Time:  11/06/2026 - 13:28 */
+/* Update Time:  16/06/2026 - 15:40 */
 * {
   padding: 0;
   margin: 0;
@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background-image: url("assets/images/durham_map.png");
+  background-image: url("durham_map.png");
   background-position: center;
   background-clip: text;
   background-attachment: fixed;
