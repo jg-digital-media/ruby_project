@@ -1,6 +1,6 @@
 # Discover Durham - Ruby Rails Project 
 
-Updated: `16/06/2025 - 11:33`
+Updated: `16/06/2025 - 16:28`
 
 ## Description
 
@@ -12,7 +12,7 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
 
 ## Task List  
 
-### Tasks `64` Completed `40` 
+### Tasks `69` Completed `46` 
 
 [Back to Top](#)
 
@@ -76,17 +76,23 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
   + `TODO COMPLETED 15-06-2026:` Create the Ruby Project
   + `TODO COMPLETED 15-06-2026:` Setup the local repository for Ruby
   + `TODO COMPLETED 15-06-2026:` Start the development server
+  + `TODO COMPLETED 16-06-2026:` Fix Durham Doorknocker image as website logo.
+  + `TODO COMPLETED 16-06-2026:` Fix opacity toggling for main navigation menu.
+  + `TODO COMPLETED 16-06-2026:` Convert the PHP Pages to Ruby Views
+  + `TODO COMPLETED 16-06-2026:` move and hook up images and scripts
+  + `TODO COMPLETED 16-06-2026:` move sass development from root to `app/assets/stylesheets/`
+  + `TODO COMPLETED 16-06-2026:` Convert JavaScript to `app/javascript/`
+  + `TODO:` Meta tags for Twitter cards for erb  `_header.html.erb.`
+  + `TODO:` Add Favicon for erb markup   `_header.html.erb.`
+  + `TODO:` Stylesheets for erb markup   `_header.html.erb.`
+  + `TODO:` Hook up roots in the main menu `#siteNav`
+  + `TODO:` Fix Navigation Icons on `siteNav` menu
+
+  + `TODO:` Echo date dynamically with Ruby? replaces PHP date method <?php echo date('Y'); for Ruby Views ?>
   + `TODO:` Load "All about Durham" modal in home route.
-  + `TODO:` Fix Durham Doorknocker image as website logo.
-  + `TODO:` Fix opacity toggling for main navigation menu.
   + `TODO:` Plan steps and stages for converting PHP to Ruby Code
-  + `TODO:` Convert the PHP Pages to Ruby Views
-  + `TODO:` move and hook up images and scripts
-  + `TODO:` move sass development from root to `app/assets/stylesheets/`
-  + `TODO:` Convert JavaScript to `app/javascript/`
   + `TODO:` Convert JSON Data Source to be read by Ruby controller
   + `TODO:` Add and convert meta elements from header template
-  + `TODO:` Test template locally
   + `TODO:` Need a simple but stylish map of Durham to include on homepage `index.php`
   + `TODO:` Edit and modify doorknocker image for website logo.
   + `TODO:` Consider places for project deployment
@@ -266,3 +272,10 @@ List the steps needed to take to set up a Ruby Rails project in a local reposito
 
   + This is all okay. It's all a bit overwhelming, and it's a learning curve. I tried to do too much converting to begin with, including things that didn't necessarily need to be converted.  But I have a working root to build on, and hopefully I'll be able to build things from there.
 
++ `16/06/2026`
+
+    + `home page (mostly recreated and converted from PHP)` -
+
+  + Now this has been a fun, if gruelling and meticulous process. I've managed to recreate the homepage for "discover durham" from the PHP to the ERB markup - so it works for Ruby Rails. Only the meta and social media tags remain to be added, and I think I have to do something to get the style highlighting in the main navigation to work.  And the code is still a bit of a mess as I prioritise getting things working, so I'll be looking to clear that up at some point.  The hardest part was building the navigation menu.
+
+  + The learning curve involved: Making comment blocks for the code, how asset rendering in Ruby actually works (where Ruby needs things to be in particular places), and how to reference images in the CSS. There is one other thing that I'm not sure about, which is how to reference JSON data courses and do the data caching for getting random data from that file. So that's still to get through.  But... at this point, the takeaway is that the homepage is working and I can use this to start building the other pages. I have my PHP files to work from for the markup, if I need them.
