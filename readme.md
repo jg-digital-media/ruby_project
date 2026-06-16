@@ -1,6 +1,6 @@
 # Discover Durham - Ruby Rails Project 
 
-Updated: `15/06/2025 - 16:46`
+Updated: `16/06/2025 - 11:33`
 
 ## Description
 
@@ -12,7 +12,7 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
 
 ## Task List  
 
-### Tasks `61` Completed `36` 
+### Tasks `64` Completed `40` 
 
 [Back to Top](#)
 
@@ -72,12 +72,15 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
 
 + Stage: Ruby on Rails Development
 
+  + `TODO COMPLETED 15-06-2026:` Install Ruby and Rails
+  + `TODO COMPLETED 15-06-2026:` Create the Ruby Project
+  + `TODO COMPLETED 15-06-2026:` Setup the local repository for Ruby
+  + `TODO COMPLETED 15-06-2026:` Start the development server
+  + `TODO:` Load "All about Durham" modal in home route.
+  + `TODO:` Fix Durham Doorknocker image as website logo.
+  + `TODO:` Fix opacity toggling for main navigation menu.
   + `TODO:` Plan steps and stages for converting PHP to Ruby Code
-  + `TODO:` Install Ruby and Rails
-  + `TODO:` Create the Ruby Project
-  + `TODO:` Setup the local repository for Ruby
-  + `TODO:` Start the development server
-  + `TODO:` Convert the PHP Pages
+  + `TODO:` Convert the PHP Pages to Ruby Views
   + `TODO:` move and hook up images and scripts
   + `TODO:` move sass development from root to `app/assets/stylesheets/`
   + `TODO:` Convert JavaScript to `app/javascript/`
