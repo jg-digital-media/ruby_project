@@ -1,6 +1,6 @@
 # Discover Durham - Ruby Rails Project 
 
-Updated: `16/06/2025 - 16:37`
+Updated: `16/06/2025 - 16:46`
 
 ## Description
 
@@ -12,7 +12,7 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
 
 ## Task List  
 
-### Tasks `69` Completed `46` 
+### Tasks `69` Completed `45` 
 
 [Back to Top](#)
 
@@ -37,8 +37,6 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
   + `TODO COMPLETED 03-06-2026:` Build "Featured Highlights" content (heading, image and text content) `about.php`
   + `TODO COMPLETED 04-06-2026:` Switch visibility when reloading pages.
   + `TODO COMPLETED 04-06-2026:` Develop hamburger menu
-
-
   + `TODO COMPLETED 04-06-2026:` Consider removing landmarks.php and renaming to attractions.php
   + `TODO COMPLETED 05-06-2026:` Modify/animate the hamburger icon
   + `TODO COMPLETED 05-06-2026:` Make doorknocker into a favicon
@@ -78,18 +76,18 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
   + `TODO COMPLETED 15-06-2026:` Start the development server
   + `TODO COMPLETED 16-06-2026:` Fix Durham Doorknocker image as website logo.
   + `TODO COMPLETED 16-06-2026:` Fix opacity toggling for main navigation menu.
-  + `TODO COMPLETED 16-06-2026:` Convert the PHP Pages to Ruby Views
   + `TODO COMPLETED 16-06-2026:` move and hook up images and scripts
   + `TODO COMPLETED 16-06-2026:` move sass development from root to `app/assets/stylesheets/`
-  + `TODO COMPLETED 16-06-2026:` Convert JavaScript to `app/javascript/`
+  + `TODO COMPLETED 16-06-2026:` Convert JavaScript to `app/javascript/`  
+  + `TODO:` Fix Navigation Icons on `siteNav` menu
+  + `TODO:` Convert the PHP Pages to Ruby Views
+  + `TODO:` Echo date dynamically with Ruby? replaces PHP date method <?php echo date('Y'); for Ruby Views ?>
+  + `TODO:` Load "All about Durham" modal in home route.
+
   + `TODO:` Meta tags for Twitter cards for erb  `_header.html.erb.`
   + `TODO:` Add Favicon for erb markup   `_header.html.erb.`
   + `TODO:` Stylesheets for erb markup   `_header.html.erb.`
   + `TODO:` Hook up roots in the main menu `#siteNav`
-  + `TODO:` Fix Navigation Icons on `siteNav` menu
-
-  + `TODO:` Echo date dynamically with Ruby? replaces PHP date method <?php echo date('Y'); for Ruby Views ?>
-  + `TODO:` Load "All about Durham" modal in home route.
   + `TODO:` Plan steps and stages for converting PHP to Ruby Code
   + `TODO:` Convert JSON Data Source to be read by Ruby controller
   + `TODO:` Add and convert meta elements from header template
