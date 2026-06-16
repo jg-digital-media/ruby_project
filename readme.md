@@ -1,6 +1,6 @@
 # Discover Durham - Ruby Rails Project 
 
-Updated: `16/06/2025 - 16:28`
+Updated: `16/06/2025 - 16:37`
 
 ## Description
 
@@ -256,6 +256,11 @@ It has one main script file.
 SASS is generated at the project root.
 
 List the steps needed to take to set up a Ruby Rails project in a local repository... convert a static PHP project to Ruby views/Roots, and to deploy a Ruby project when ready.
+
++ asset locations for ruby
+  + `app/assets/images/`
+  + `app/javascript/`
+  + `app/assets/stylesheets/`
 
 [Back to Top](#)
 
