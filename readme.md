@@ -1,6 +1,6 @@
 # Discover Durham - Ruby Rails Project 
 
-Updated: `17/06/2025 - 13:31`
+Updated: `17/06/2025 - 16:53`
 
 ## Description
 
@@ -305,4 +305,13 @@ data sources files stored in - /config/data/
 
   + Now this has been a fun, if gruelling and meticulous process. I've managed to recreate the homepage for "discover durham" from the PHP to the ERB markup - so it works for Ruby Rails. Only the meta and social media tags remain to be added, and I think I have to do something to get the style highlighting in the main navigation to work.  And the code is still a bit of a mess as I prioritise getting things working, so I'll be looking to clear that up at some point.  The hardest part was building the navigation menu.
 
-  + The learning curve involved: Making comment blocks for the code, how asset rendering in Ruby actually works (where Ruby needs things to be in particular places), and how to reference images in the CSS. There is one other thing that I'm not sure about, which is how to reference JSON data courses and do the data caching for getting random data from that file. So that's still to get through.  But... at this point, the takeaway is that the homepage is working and I can use this to start building the other pages. I have my PHP files to work from for the markup, if I need them.
+  + The learning curve involved: Making comment blocks for the code, how asset rendering in Ruby actually works (where Ruby needs things to be in particular places), and how to reference images in the CSS. There is one other thing that I'm not sure about, which is how to reference JSON data courses and do the data caching for getting random data from that file. So that's still to get through. But... at this point, the takeaway is that the homepage is working and I can use this to start building the other pages. I have my PHP files to work from for the markup, if I need them.
+
+  + `17/06/2026`
+
+      + `3 Featured Durham Highlights on the /about route on each page load`
+      + `Most of the routes are fully converted with one or 2 aspects to be done - finishing touches
+
+    + What has been achieved today?  With the help of AI, I've been able to recreate some of the more difficult elements of the conversion from PHP to Ruby. The biggest thing was introducing the main data file for the featured highlights and converting the PHP over to ERB's Ruby. This involved modifying the Pages Controller in Ruby for the About route so that it references the JSON file and then using ERB to render the dynamic content.
+
+    + When I take a step back, I realise how close I am to getting ready for deployment. It's mainly now about reintroducing meta tags and social media tags for browser sharing that were stripped out from the PHP versions and cleaning up the code behind the scenes.  We also need to add caching to the featured highlights section; we reintroduce the Daily Featured Highlights content, a crucial feature of the site from the PHP version.
