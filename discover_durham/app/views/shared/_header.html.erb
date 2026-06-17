@@ -104,8 +104,8 @@
            
 
             <li>
-                <%= link_to root_path do %>
-                    <span class="nav---icon" aria-hidden="true">
+                <%= link_to root_path, class: ("active" if current_page?(root_path)) do %>
+                    <span class="nav---icon " aria-hidden="true">
                     <svg viewBox="0 0 24 24" focusable="false">
                         <path d="M12 3.2 4 10v10h6v-6h4v6h6V10L12 3.2z" /></svg>
                     </span>
@@ -114,7 +114,7 @@
                 <% end %>
             </li>
             <li>
-                <%= link_to about_path do %>
+                <%= link_to about_path, class: ("active" if current_page?(about_path)) do %>
                     <span class="nav---icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" focusable="false">
                         <path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5z"/></svg>
@@ -125,7 +125,7 @@
             </li>
 
             <li>
-                <%= link_to history_path do %>
+                <%= link_to history_path, class: ("active" if current_page?(history_path)) do %>
                     <span class="nav---icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" focusable="false">
                         <path d="M6 2h12a2 2 0 0 1 2 2v16l-4-2-4 2-4-2-4 2V4a2 2 0 0 1 2-2zm1 6h10v2H7V8zm0 4h10v2H7v-2z"/>
@@ -136,7 +136,7 @@
                 <% end %>
             </li>
             <li>
-                <%= link_to attractions_path do %>
+                <%= link_to attractions_path, class: ("active" if current_page?(attractions_path)) do %>
                     <span class="nav---icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" focusable="false">
                         <path d="M12 2 3 9h2v11h14V9h2L12 2zm0 3.8 5 4.5V18H7v-7.7l5-4.5z"/>
@@ -146,7 +146,7 @@
                     <span class="nav---label">Attractions</span>
                 <% end %></li>
             <li>
-                <%= link_to events_path do %>
+                <%= link_to events_path, class: ("active" if current_page?(events_path)) do %>
                     <span class="nav---icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" focusable="false">
                         <path d="M7 2v2H5a2 2 0 0 0-2 2v2h18V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zm14 8H3v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V10zM7 13h2v2H7v-2z"/>
@@ -156,7 +156,7 @@
                     <span class="nav---label">Events</span>
                 <% end %></li>
             <li>
-                <%= link_to coffee_path do %>
+                <%= link_to coffee_path, class: ("active" if current_page?(coffee_path)) do %>
                     <span class="nav---icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" focusable="false">
                         <path d="M6 4h12v2h1a3 3 0 0 1 0 6h-1v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4zm2 2v12h8V6H8zm10 0h1a1 1 0 0 1 0 2h-1V6z"/>
@@ -166,7 +166,7 @@
                     <span class="nav---label">Coffee</span>
                 <% end %></li>
             <li>
-                <%= link_to links_path do %>
+                <%= link_to links_path, class: ("active" if current_page?(links_path)) do %>
                     <span class="nav---icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" focusable="false">
                         <path d="M10.6 14.4a3 3 0 0 1 0-4.2l1.8-1.8a3 3 0 0 1 4.2 4.2l-.9.9h-2.3l1.1-1.1a1 1 0 1 0-1.4-1.4l-1.8 1.8a1 1 0 0 0 0 1.4 1 1 0 0 1 0 1.4zm2.8-4.8a3 3 0 0 1 0 4.2l-1.8 1.8a3 3 0 0 1-4.2-4.2l.9-.9h2.3l-1.1 1.1a1 1 0 1 0 1.4 1.4l1.8-1.8a1 1 0 0 0 0-1.4 1 1 0 0 1 0-1.4"/>
