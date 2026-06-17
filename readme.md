@@ -1,6 +1,6 @@
 # Discover Durham - Ruby Rails Project 
 
-Updated: `17/06/2025 - 13:18`
+Updated: `17/06/2025 - 13:31`
 
 ## Description
 
@@ -12,7 +12,7 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
 
 ## Task List  
 
-### Tasks `71` Completed `49` 
+### Tasks `72` Completed `49` 
 
 [Back to Top](#)
 
@@ -83,14 +83,15 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
   + `TODO COMPLETED 17-06-2026:` Echo date dynamically with Ruby replaces PHP date method <?php echo date('Y'); for Ruby Views.  
   + `TODO COMPLETED 17-06-2026:` Load "All about Durham" modal in home route.
   + `TODO COMPLETED 17-06-2026:` Show the active class for list items as per php for erb markup `_header.html.erb.`
-  + `TODO` Cache selections of featured highlights every 24 hours `/about`
+  + `TODO:` Hook up roots in the main menu `#siteNav`
+  + `TODO:` Cache selections of featured highlights every 24 hours `/about`
 
-  + `TODO:` Convert the PHP Pages to Ruby Views
 
   + `TODO:` Meta tags for Twitter cards for erb `_header.html.erb.`
+  + `TODO:` Convert the PHP Pages to Ruby Views
+  + `TODO:` Social media and SEO meta tags for erb markup `_header.html.erb.`
   + `TODO:` Add Favicon for erb markup `_header.html.erb.`
   + `TODO:` Stylesheets for erb markup `_header.html.erb.`
-  + `TODO:` Hook up roots in the main menu `#siteNav`
   + `TODO:` Plan steps and stages for converting PHP to Ruby Code
   + `TODO:` Convert JSON Data Source to be read by Ruby controller
   + `TODO:` Add and convert meta elements from header template
@@ -263,6 +264,25 @@ List the steps needed to take to set up a Ruby Rails project in a local reposito
   + `app/assets/images/`
   + `app/javascript/`
   + `app/assets/stylesheets/`
+
+
++ 
+
+```erb
+
+
+<%= image_tags looks for images in app/assets/images/
+Ruby looks for javascript in app/javascript/
+
+....
+
+views/pages/ - render routes from a controler called Pages
+template parts - shared layout files in views/shared/ - 
+
+data sources files stored in - /config/data/
+
+
+````
 
 [Back to Top](#)
 
