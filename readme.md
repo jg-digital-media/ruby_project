@@ -1,6 +1,6 @@
 # Discover Durham - Ruby Rails Project 
 
-Updated: `16/06/2025 - 16:46`
+Updated: `17/06/2025 - 13:18`
 
 ## Description
 
@@ -12,7 +12,7 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
 
 ## Task List  
 
-### Tasks `69` Completed `45` 
+### Tasks `71` Completed `49` 
 
 [Back to Top](#)
 
@@ -79,14 +79,17 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
   + `TODO COMPLETED 16-06-2026:` move and hook up images and scripts
   + `TODO COMPLETED 16-06-2026:` move sass development from root to `app/assets/stylesheets/`
   + `TODO COMPLETED 16-06-2026:` Convert JavaScript to `app/javascript/`  
-  + `TODO:` Fix Navigation Icons on `siteNav` menu
-  + `TODO:` Convert the PHP Pages to Ruby Views
-  + `TODO:` Echo date dynamically with Ruby? replaces PHP date method <?php echo date('Y'); for Ruby Views ?>
-  + `TODO:` Load "All about Durham" modal in home route.
+  + `TODO COMPLETED 17-06-2026:` Fix Navigation Icons on `siteNav` menu
+  + `TODO COMPLETED 17-06-2026:` Echo date dynamically with Ruby replaces PHP date method <?php echo date('Y'); for Ruby Views.  
+  + `TODO COMPLETED 17-06-2026:` Load "All about Durham" modal in home route.
+  + `TODO COMPLETED 17-06-2026:` Show the active class for list items as per php for erb markup `_header.html.erb.`
+  + `TODO` Cache selections of featured highlights every 24 hours `/about`
 
-  + `TODO:` Meta tags for Twitter cards for erb  `_header.html.erb.`
-  + `TODO:` Add Favicon for erb markup   `_header.html.erb.`
-  + `TODO:` Stylesheets for erb markup   `_header.html.erb.`
+  + `TODO:` Convert the PHP Pages to Ruby Views
+
+  + `TODO:` Meta tags for Twitter cards for erb `_header.html.erb.`
+  + `TODO:` Add Favicon for erb markup `_header.html.erb.`
+  + `TODO:` Stylesheets for erb markup `_header.html.erb.`
   + `TODO:` Hook up roots in the main menu `#siteNav`
   + `TODO:` Plan steps and stages for converting PHP to Ruby Code
   + `TODO:` Convert JSON Data Source to be read by Ruby controller
@@ -134,6 +137,7 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
   + IMG_8519.JPG	-	`05-09-2023`
   + https://jgdm-projects.s3.eu-west-2.amazonaws.com/discover_durham/durham-fader-gallery/IMG_3816.JPG
 
++ The equivalent of the PHP `echo date('Y');` is Ruby `Date.today.strftime("%Y")`
 
 #### Ruby Dev
 
