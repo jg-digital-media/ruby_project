@@ -1,0 +1,63 @@
+[
+
+    {
+
+        "title": "Discover Durham",
+        "image": "https://jgdm-projects.s3.eu-west-2.amazonaws.com/discover_durham/IMG_3719.JPG",
+        "alt": "Discover Durham",
+        "description": "Discover Durham is a Ruby on Rails based information website celebrating the historic City of Durham."
+    }, {
+
+        "title": "Local Cafes",
+        "image": "https://jgdm-projects.s3.eu-west-2.amazonaws.com/discover_durham/20250308_100301.jpg",
+        "alt": "Local Cafes",
+        "description": "The clear highlight is the iconic Durham Cathedral and Castle. But there is so much more to explore from its cosy cafés, riverside walks, and local history. the site aims to showcase some of the places that make Durham unique."
+    }, {
+
+        "title": "About Durham",
+        "image": "https://jgdm-projects.s3.eu-west-2.amazonaws.com/discover_durham/20250405_144400.jpg",
+        "alt": "About Durham",
+        "description": "Whether you're planning a visit, exploring the North East, or simply learning more about the city, Discover Durham offers a simple guide to landmarks, culture, food, and local life."
+    }, {
+        "title": "Durham Landmarks",
+        "image": "https://jgdm-projects.s3.eu-west-2.amazonaws.com/discover_durham/IMG_1428.JPG",
+        "alt": "Durham Landmarks",
+        "description": "Durham is well known for its historic university castle and the Norman built Cathedral, which towers over the River Wear."
+    }, {
+        "title": "History of Durham",
+        "image": "https://jgdm-projects.s3.eu-west-2.amazonaws.com/discover_durham/IMG_8590.JPG",
+        "alt": "History of Durham",
+        "description": "The first recorded mention of Durham was in 995 AD when Monks are known to have travelled to the area to bury St Cuthbert. Construction of Durham Cathedral began later in 1093 AD."
+    }, {
+        "title": "Durham Events",
+        "image": "https://jgdm-projects.s3.eu-west-2.amazonaws.com/discover_durham/IMG_2043.JPG",
+        "alt": "Durham Events",
+        "description": "Events happen throughput the year in Durham. Durham celebrates the Mining roots of County Durham every year with the Durham Miners Gala."
+    },  {
+        "title": "County Durham",
+        "image": "https://jgdm-projects.s3.eu-west-2.amazonaws.com/discover_durham/IMG_9405.JPG",
+        "alt": "County Durham",
+        "description": "County Durham is the ceremonial county of the North East. It borders Northumberland, Cumbria, Tyne and Wear and is a county of huge historical and cultural significance."
+    }, {
+        "title": "Durham Cathedral",
+        "image": "https://jgdm-projects.s3.eu-west-2.amazonaws.com/discover_durham/IMG_3707.JPG",
+        "alt": "Durham Cathedral",
+        "description": "Durham Cathedral is an iconic landmark of the city. It is the seat of the Bishop of Durham and the mother church of the Diocese of Durham."
+    }, {
+        "title": "Durham Castle",
+        "image": "https://jgdm-projects.s3.eu-west-2.amazonaws.com/discover_durham/IMG_3708.JPG",
+        "alt": "Durham Castle",
+        "description": "Durham Castle is a Norman castle in the city of Durham, England, which has been occupied since 1837 by University College, Durham after its previous role as the residence of the Bishops of Durham."
+    }, {
+        "title": "River Wear Walks",
+        "image": "https://jgdm-projects.s3.eu-west-2.amazonaws.com/discover_durham/IMG_8583.JPG",
+        "alt": "River Wear walks",
+        "description": "The River Wear offers a variety of walks in and around Durham, ranging from short, accessible city-center strolls with stunning views of the UNESCO World Heritage Sites."
+    }, {
+
+        "title": "Beamish Museum",
+        "image": "https://jgdm-projects.s3.eu-west-2.amazonaws.com/discover_durham/IMG_1062.JPG",
+        "alt": "Beamish Museum",
+        "description": "Beamish Museum is Durham's iconic open-air history museum; bringing to life the city's past with a collection of artifacts, photographs, and interactive exhibits - from the Georgian era to the 1950s."
+    }   
+]

@@ -1,0 +1,13 @@
+<% @featured_highlights.each do |highlight| %>    
+
+            <article class="discover---durham--featured-item">
+
+                <h4><%= highlight["title"] %></h4>
+                <div class="featured---image--clip">
+                    <img class="durham-featured-image" src="<%= highlight["image"] %>" loading="lazy" alt="<%= highlight["alt"] %>" title="<%= highlight["alt"] %>">
+                </div>
+                <p><%= highlight["description"] %></p>
+
+            </article>
+
+<% end %>
