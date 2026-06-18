@@ -1,6 +1,6 @@
 # Discover Durham - Ruby Rails Project 
 
-Updated: `18/06/2025 - 10:30`
+Updated: `18/06/2025 - 17:01`
 
 ## Description
 
@@ -12,7 +12,7 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
 
 ## Task List  
 
-### Tasks `72` Completed `49` 
+### Tasks `72` Completed `54` 
 
 [Back to Top](#)
 
@@ -83,17 +83,17 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
   + `TODO COMPLETED 17-06-2026:` Echo date dynamically with Ruby replaces PHP date method <?php echo date('Y'); for Ruby Views.  
   + `TODO COMPLETED 17-06-2026:` Load "All about Durham" modal in home route.
   + `TODO COMPLETED 17-06-2026:` Show the active class for list items as per php for erb markup `_header.html.erb.`
-  + `TODO:` Hook up roots in the main menu `#siteNav`
-  + `TODO:` Cache selections of featured highlights every 24 hours `/about`
+  + `TODO COMPLETED 18-06-2026:` Hook up roots in the main menu `#siteNav`
+  + `TODO COMPLETED 18-06-2026:` Cache selections of featured highlights every 24 hours `/about`
+  + `TODO COMPLETED 18-06-2026:` Convert the PHP Pages to Ruby Views
+  + `TODO COMPLETED 18-06-2026:` Plan steps and stages for converting PHP to Ruby Code
+  + `TODO COMPLETED 18-06-2026:` Convert JSON Data Source to be read by Ruby controller
 
 
   + `TODO:` Meta tags for Twitter cards for erb `_header.html.erb.`
-  + `TODO:` Convert the PHP Pages to Ruby Views
   + `TODO:` Social media and SEO meta tags for erb markup `_header.html.erb.`
   + `TODO:` Add Favicon for erb markup `_header.html.erb.`
   + `TODO:` Stylesheets for erb markup `_header.html.erb.`
-  + `TODO:` Plan steps and stages for converting PHP to Ruby Code
-  + `TODO:` Convert JSON Data Source to be read by Ruby controller
   + `TODO:` Add and convert meta elements from header template
   + `TODO:` Need a simple but stylish map of Durham to include on homepage `index.php`
   + `TODO:` Edit and modify doorknocker image for website logo.
