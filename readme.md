@@ -1,6 +1,6 @@
 # Discover Durham - Ruby Rails Project 
 
-Updated: `17/06/2025 - 16:53`
+Updated: `18/06/2025 - 10:30`
 
 ## Description
 
@@ -315,3 +315,11 @@ data sources files stored in - /config/data/
     + What has been achieved today?  With the help of AI, I've been able to recreate some of the more difficult elements of the conversion from PHP to Ruby. The biggest thing was introducing the main data file for the featured highlights and converting the PHP over to ERB's Ruby. This involved modifying the Pages Controller in Ruby for the About route so that it references the JSON file and then using ERB to render the dynamic content.
 
     + When I take a step back, I realise how close I am to getting ready for deployment. It's mainly now about reintroducing meta tags and social media tags for browser sharing that were stripped out from the PHP versions and cleaning up the code behind the scenes.  We also need to add caching to the featured highlights section; we reintroduce the Daily Featured Highlights content, a crucial feature of the site from the PHP version.
+
++ `18/06/2026`
+
+    + `1 - Added caching to the featured highlights section`
+  
+  + Caching is now in place. With Ruby, I'm working a lot with AI to help me get my head around technical problems. There are a couple of things I want to note. The caching in the project is known as "server side caching". It looks for the existence of a cache and serves the same content from the same cache to all users, which is the effect I want.  Secondly, Rails provides its own caching system, so I needed to wrap my head around what code to use and where to put the files.  
+  
+  + There is a new services directory with a service Ruby file that is used to get the cached data from the JSON file.  One more point of note, and it's a notable bug: Every time we restart the server, the cache is deleted and regenerated, but it takes one more refresh to get rid of a view error and view the new content.  I'm not sure why this is happening, but we know the caching is working.
