@@ -1,6 +1,6 @@
 # Discover Durham - Ruby Rails Project 
 
-Updated: `18/06/2025 - 17:01`
+Updated: `19/06/2025 - 14:23`
 
 ## Description
 
@@ -12,7 +12,7 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
 
 ## Task List  
 
-### Tasks `72` Completed `54` 
+### Tasks `75` Completed `56` 
 
 [Back to Top](#)
 
@@ -90,12 +90,16 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
   + `TODO COMPLETED 18-06-2026:` Convert JSON Data Source to be read by Ruby controller
 
 
-  + `TODO:` Meta tags for Twitter cards for erb `_header.html.erb.`
+  + `TODO COMPLETED 19-06-2026:` Meta tags for Twitter cards for erb `_header.html.erb.`
+  + `TODO COMPLETED 19-06-2026:` Need a simple but stylish map of Durham to include on homepage `index.php`
+
   + `TODO:` Social media and SEO meta tags for erb markup `_header.html.erb.`
   + `TODO:` Add Favicon for erb markup `_header.html.erb.`
   + `TODO:` Stylesheets for erb markup `_header.html.erb.`
+  + `TODO:` Solve Duplication of meta elements from header template- where do meta tags and header content go?
+    +  `TODO:` BUG: some meta elements remain from the PHP version - remove or replace them with the ERB markup for Ruby
   + `TODO:` Add and convert meta elements from header template
-  + `TODO:` Need a simple but stylish map of Durham to include on homepage `index.php`
+  + `TODO:` Add and convert meta elements from header template
   + `TODO:` Edit and modify doorknocker image for website logo.
   + `TODO:` Consider places for project deployment
   + `TODO:` Deploy project
