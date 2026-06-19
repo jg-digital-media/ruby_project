@@ -1,6 +1,6 @@
 # Discover Durham - Ruby Rails Project 
 
-Updated: `19/06/2025 - 14:23`
+Updated: `19/06/2025 - 14:32`
 
 ## Description
 
@@ -327,3 +327,9 @@ data sources files stored in - /config/data/
   + Caching is now in place. With Ruby, I'm working a lot with AI to help me get my head around technical problems. There are a couple of things I want to note. The caching in the project is known as "server side caching". It looks for the existence of a cache and serves the same content from the same cache to all users, which is the effect I want.  Secondly, Rails provides its own caching system, so I needed to wrap my head around what code to use and where to put the files.  
   
   + There is a new services directory with a service Ruby file that is used to get the cached data from the JSON file.  One more point of note, and it's a notable bug: Every time we restart the server, the cache is deleted and regenerated, but it takes one more refresh to get rid of a view error and view the new content.  I'm not sure why this is happening, but we know the caching is working.
+
++ `19/06/2026`
+
+  + Much of the ERB template markup remains a mess. But I have at least verified that the meta tags as stored in the Pages Controller are being used.  There does seem to have developed a confusion, though, as to where the meta tags should go, or indeed where header elements and content should also be. One of the messy things that has happened is that I've managed to retain too many remnants of the markup from the PHP version of this project.
+
+  + This might be why the correct favicon is not being displayed.  Will try looking for answers to fix this here. But there are 2 locations in my directory where the favicon should probably be stored: `app/assets/images/` or `/public/images/`
