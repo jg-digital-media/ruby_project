@@ -1,6 +1,6 @@
 # Discover Durham - Ruby Rails Project 
 
-Updated: `19/06/2025 - 14:32`
+Updated: `23/06/2025 - 15:45`
 
 ## Description
 
@@ -93,12 +93,12 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
   + `TODO COMPLETED 19-06-2026:` Meta tags for Twitter cards for erb `_header.html.erb.`
   + `TODO COMPLETED 19-06-2026:` Need a simple but stylish map of Durham to include on homepage `index.php`
   + `TODO COMPLETED 23-06-2026:` Add Favicon for erb markup `_header.html.erb.`
+  + `TODO:` Solve Duplication of meta elements from header template- where do meta tags and header content go?
+    +  `TODO:` BUG: some meta elements remain from the PHP version - remove or replace them with the ERB markup for Ruby
 
   + `TODO:` Check and review favicon on browser - ruby on rails
   + `TODO:` Social media and SEO meta tags for erb markup `_header.html.erb.`
   + `TODO:` Stylesheets for erb markup `_header.html.erb.`
-  + `TODO:` Solve Duplication of meta elements from header template- where do meta tags and header content go?
-    +  `TODO:` BUG: some meta elements remain from the PHP version - remove or replace them with the ERB markup for Ruby
   + `TODO:` Add and convert meta elements from header template
   + `TODO:` Add and convert meta elements from header template
   + `TODO:` Edit and modify doorknocker image for website logo.
@@ -334,3 +334,23 @@ data sources files stored in - /config/data/
   + Much of the ERB template markup remains a mess. But I have at least verified that the meta tags as stored in the Pages Controller are being used.  There does seem to have developed a confusion, though, as to where the meta tags should go, or indeed where header elements and content should also be. One of the messy things that has happened is that I've managed to retain too many remnants of the markup from the PHP version of this project.
 
   + This might be why the correct favicon is not being displayed.  Will try looking for answers to fix this here. But there are 2 locations in my directory where the favicon should probably be stored: `app/assets/images/` or `/public/images/`
+
++ `23/06/2026`
+
+  + I've devoted a lot of time trying to remember and figure out how to use the layout templates with ERB. In my original attempts, I fell into a few traps where I had managed to copy and paste the PHP markup into the ERB markup; I had pasted too sets of head tag elements and not separated them properly, and I had noted incorrectly closed ERB rendering methods.
+
+  + There was one occasion where I'd attempted to include the ERB method for favicons inside the href attribute of the HTML link tag. I imagine that's a common pitfall. As far as I can tell, the favicon is now being recognised by Rails, but the correct icon still isn't showing up.
+
+  + For now... just to reiterate some points of Learning.... 
+
+```
+1. Metadata belongs in the layout, not the header partial
+
+2. Beware duplicating the normal header elements
+
+3. The header partial should only contain other HTML elements. not meta... bnot the Head element.
+
+4. Check for and remove any traces of PHP elements in ERB.
+
+5. 
+```
