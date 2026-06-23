@@ -13,7 +13,7 @@ class PagesController < ApplicationController
         @page_title = "Homepage"
         @html_title = "Discover Durham"
         @website_title = "Discover Durham"
-        @preview_image = "https://projects.jonniegrieve.co.uk/social.png"
+        @preview_image = "https://projects.jonniegrieve.co.uk/discover_durham/assets/images/social.png"
         @preview_image_alt = "Welcome to Discover Durham"
         @website_description = "Durham is a cultural heartland of the North East. This is a website to celebrate the city for its history, spirituality and culture."
         @meta_description = "A celebration of Durham City's history, spirituality and culture."
