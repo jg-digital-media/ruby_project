@@ -12,7 +12,7 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
 
 ## Task List  
 
-### Tasks `75` Completed `56` 
+### Tasks `76` Completed `57` 
 
 [Back to Top](#)
 
@@ -92,9 +92,10 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
 
   + `TODO COMPLETED 19-06-2026:` Meta tags for Twitter cards for erb `_header.html.erb.`
   + `TODO COMPLETED 19-06-2026:` Need a simple but stylish map of Durham to include on homepage `index.php`
+  + `TODO COMPLETED 23-06-2026:` Add Favicon for erb markup `_header.html.erb.`
 
+  + `TODO:` Check and review favicon on browser - ruby on rails
   + `TODO:` Social media and SEO meta tags for erb markup `_header.html.erb.`
-  + `TODO:` Add Favicon for erb markup `_header.html.erb.`
   + `TODO:` Stylesheets for erb markup `_header.html.erb.`
   + `TODO:` Solve Duplication of meta elements from header template- where do meta tags and header content go?
     +  `TODO:` BUG: some meta elements remain from the PHP version - remove or replace them with the ERB markup for Ruby
