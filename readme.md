@@ -1,6 +1,6 @@
 # Discover Durham - Ruby Rails Project 
 
-Updated: `23/06/2025 - 15:45`
+Updated: `24/06/2025 - 16:23`
 
 ## Description
 
@@ -18,12 +18,12 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
 
 + Stage: Planning
 
-  + `TODO:` Planning - notes, ideas and wireframing stage.
+  + `TODO` Planning - notes, ideas and wireframing stage.
 
 + Stage: Prototype and Design
 
-  + `TODO:` implement header elements
-  + `TODO:` Develop header elements
+  + `TODO` implement header elements
+  + `TODO` Develop header elements
   + `TODO COMPLETED 27-05-2026:` Add doorknocker image for website logo
   + `TODO COMPLETED 28-05-2026:` Generalised page styles - intended for landmarks, events, coffee pages
   + `TODO COMPLETED 01-06-2026:` Finish homepage `index.php`
@@ -94,7 +94,7 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
   + `TODO COMPLETED 19-06-2026:` Need a simple but stylish map of Durham to include on homepage `index.php`
   + `TODO COMPLETED 23-06-2026:` Add Favicon for erb markup `_header.html.erb.`
   + `TODO:` Solve Duplication of meta elements from header template- where do meta tags and header content go?
-    +  `TODO:` BUG: some meta elements remain from the PHP version - remove or replace them with the ERB markup for Ruby
+    + `TODO:` BUG: some meta elements remain from the PHP version - remove or replace them with the ERB markup for Ruby
 
   + `TODO:` Check and review favicon on browser - ruby on rails
   + `TODO:` Social media and SEO meta tags for erb markup `_header.html.erb.`
@@ -354,3 +354,52 @@ data sources files stored in - /config/data/
 
 5. 
 ```
+
++ `24/06/2026`
+
+  + I devoted some time to clearing up the application layout template by removing duplicate markup and selecting the right render values for the meta tags.
+
+  + I've added some notes to remind myself about the Rails Asset Pipeline.
+
+
+```
+Rails Asset Pipeline
+
+Purpose:
+Manage and serve static assets such as CSS, JavaScript,
+images, fonts and favicons.
+
+Benefits:
+- Central asset locations
+- Cache busting via fingerprints
+- Helper methods for asset URLs
+- Production optimisation
+
+Common locations:
+app/assets/images
+app/assets/stylesheets
+app/javascript
+
+Common helpers:
+image_tag
+favicon_link_tag
+stylesheet_link_tag
+javascript_importmap_tags
+  ```
+
++ So in Summary.
+
+  1 Download Ruby 
+  2 Can launch a local server with `rails server` `bin/rails server`
+  3 Understand Ruby Project management commands
+  4 Create views and controllers
+  5 Understand how to declare routes and how they're linked to Controllers.
+  6 Understand the asset pipeline (Certain assets go in certain folders)
+
+    + `app/assets/images/`
+    + `app/assets/stylesheets/`
+    + `app/javascript/`
+    + `config/data/data.json`
+    + `config/routes.rb`
+    + `app/views/`
+    + `app/controllers/`
