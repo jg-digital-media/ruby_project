@@ -1,26 +1,3 @@
-<?php
-
-    $filename = "about.php";
-    $baseURL = "https://projects.jonniegrieve.co.uk/";
-    $route = "about"; // for ruby on rails
-
-    $page_id = "about";
-    $page_title = "About Durham City";
-    $html_title = "Discover Durham";
-    $website_title = "Discover Durham";
-    $preview_image = "https://projects.jonniegrieve.co.uk/social.png";
-    $preview_image_alt = "Welcome to Discover Durham";
-    $website_description = "Whether you're planning a visit, exploring the North East, or simply learning more about the city, Discover Durham offers a simple guide to landmarks, culture, food, and local life";
-    $meta_description = "Whether you're planning a visit, exploring the North East, or simply learning more about the city, Discover Durham offers a simple guide to landmarks, culture, food, and local life.";
-    $current_url = "https://projects.jonniegrieve.co.uk/discover-durham/about";
-
-    // get daily featured highlight elements - about.php
-    require_once __DIR__ . '/assets/includes/featured-highlights.php';
-    $featuredHighlights = get_daily_featured_highlights(3);
-?>
-
-<?php include "assets/template-parts/header.php"; ?>
-
     <main>
 
         <section class="about---page--container">
@@ -56,9 +33,3 @@
         </section>
 
     </main>
-
-    <script type="text/javascript" src="app.js"></script>
-</body>
-</html>
-
-<?php include "assets/template-parts/footer.php"; ?>
