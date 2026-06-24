@@ -5,31 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes"><%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
     <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
-
-    <link rel="icon" href="/icon.png" type="image/png">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/icon.png">
-
-    <%# Includes all stylesheet files in app/assets/stylesheets %>
-    <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
 
     <!-- identify and preconnect any Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
 
-
     <!-- Standard SEO -->
-    <title> <%= @website_title %> | <%= @page_title %></title>
     <meta name="description" content="<%= @meta_description %>">
 
     <!-- Open Graph (Facebook, LinkedIn, WhatsApp, Discord, Slack, Teams, etc.) -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="<%= @website_title %>">
-    <meta property="og:description" content="<%= @website_title %>">
+    <meta property="og:description" content="<%= @meta_description %>">
     <meta property="og:url" content="<%= @current_url %>">
     <meta property="og:site_name" content="<%= @website_title %>">
     <meta property="og:image" content="<%= @preview_image %>">
@@ -37,53 +29,32 @@
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="<%= @preview_image_alt %>">
     
+    <!-- Twitter / X --> 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="<%= @website_title %>">
     <meta name="twitter:description" content="<%= @meta_description %>.">
     <meta name="twitter:image" content="<%= @preview_image %>">
-
    
-    <meta name="theme-color" content="#0066cc">
-    
-    <link rel="canonical" href="<%= @current_url %>">
-
-   
-    <%= favicon_link_tag 'favicon.png', type: 'image/png' %>
-
-    <!-- HTML Title -->
-    <title><%= @website_title %> | Discover Durham (in Ruby Rails)</title>
-
-    <!-- Twitter / X --> 
-    <%# TODO: Meta tags for Twitter cards for erb  _header.html.erb %>
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="page_title">
-    <meta name="twitter:description" content="meta_description">
-    <meta name="twitter:image" content="preview_image;"> 
-
-
     <!-- Optional branding -->
     <meta name="theme-color" content="#0066cc">
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="<%= @current_url %>"> 
     
-    <%# if false %>
+    <!-- Canonical URL -->
+    <link rel="canonical" href="<%= @current_url %>">
 
     <!-- Favicon -->
-    <%# TODO: Add Favicon for erb markup   <link rel="icon" type="image/png" href="favicon.png"> %>
+    <%= favicon_link_tag 'favicon.png', type: 'image/png' %>
 
     <!-- Stylesheets -->
-    <%# TODO: get main stylesheet for erb markup <link rel="stylesheet" type="text/css" href="style.css" %>
-    <%# end %>
+    <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+
+    <!-- JavaScript Ruby Tag -->
+    <%= javascript_importmap_tags %>
 
     <!-- HTML Title -->
-    <title>Discover Durham (in Ruby Rails) | <%= @current_url %></title>    
+    <title><%= @website_title %> | <%= @page_title %></title>
 
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>    
-
-    
+    <%= csp_meta_tag %> 
 
     <%= yield :head %>
     
