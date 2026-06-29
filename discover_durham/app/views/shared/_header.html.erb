@@ -2,15 +2,17 @@
 
         <aside class="website---heading">
 
-            <div class = "discover---durham--container">
-            
-                <h1>Discover Durham   <p>(A Ruby Rails Project)</span></p></h1>
-                 <%= image_tag "doorknock-1.png",
-              loading: "lazy",
-              id: "discover---durham--logo",
-              class: "image_gallery_item_homepage",
-              alt: "doorknocker image from durham cathedral version 1",
-              title: "doorknocker image from durham cathedral version 1" %>
+            <div class = "discover---durham--container">            
+
+                <h1>Discover Durham <p>(A Ruby Rails Project)</span></p></h1>
+
+                <%= image_tag "doorknock-1.png",
+                    loading: "lazy",
+                    id: "discover---durham--logo",
+                    class: "image_gallery_item_homepage",
+                    alt: "doorknocker image from durham cathedral version 1",
+                    title: "doorknocker image from durham cathedral version 1" 
+                %>
                
             </div>
 
@@ -22,7 +24,6 @@
                 </span>
             </div>
 
-
         </aside>
 
     </header>
@@ -31,8 +32,7 @@
 
         <ul>
         
-            <li><a href="#" id="close-menu-btn">(&uparrow;)</a></li>             
-           
+            <li><a href="#" id="close-menu-btn">(&uparrow;)</a></li> 
 
             <li>
                 <%= link_to root_path, class: ("active" if current_page?(root_path)) do %>
@@ -54,7 +54,6 @@
                     <span class="nav---label">About</span>
                 <% end %>
             </li>
-
             <li>
                 <%= link_to history_path, class: ("active" if current_page?(history_path)) do %>
                     <span class="nav---icon" aria-hidden="true">
@@ -116,6 +115,7 @@
     </nav>
 
     <script>
+
         (function () {
             var cookiePrefix = "discover_durham_menu_active=";
             var cookies = document.cookie.split(";");
