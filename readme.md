@@ -1,6 +1,6 @@
 # Discover Durham - Ruby Rails Project 
 
-Updated: `24/06/2025 - 16:23`
+Updated: `29/06/2025 - 10:37`
 
 ## Description
 
@@ -12,7 +12,7 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
 
 ## Task List  
 
-### Tasks `76` Completed `57` 
+### Tasks `105` Completed `57` 
 
 [Back to Top](#)
 
@@ -104,6 +104,37 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
   + `TODO:` Edit and modify doorknocker image for website logo.
   + `TODO:` Consider places for project deployment
   + `TODO:` Deploy project
+
+  + ### `TODO:` Deployment Checks and Production Checklist
+ 
+    + `TODO:` Pages
+      + `TODO:` Home
+      + `TODO:` About
+      + `TODO:` History
+      + `TODO:` Attractions
+      + `TODO:` Events
+      + `TODO:` Coffee
+      + `TODO:` Links
+      + `TODO:` Disclaimer
+    + `TODO:` Assets
+      + `TODO:` CSS loading
+      + `TODO:` JavaScript loading
+      + `TODO:` Favicon loading
+      + `TODO:` Images loading
+    `TODO:` SEO
+      + `TODO:` Title tags
+      + `TODO:` Meta descriptions
+      + `TODO:` Open Graph tags
+      + `TODO:` Twitter cards
+      + `TODO:` Canonical URLs
+    + `TODO:` Rails
+      + `TODO:` No PHP includes remaining
+      + `TODO:` No .php links remaining
+      + `TODO:` All navigation uses Rails routes
+      + `TODO:` No 500 errors in logs
+    + `TODO:` Git
+      + `TODO:` .gitignore configured
+      + `TODO:` Repository pushed to GitHub
 
 ## Notes
 
@@ -403,3 +434,14 @@ javascript_importmap_tags
     + `config/routes.rb`
     + `app/views/`
     + `app/controllers/`
+
++ `29/06/2026`
+
+  + I was hung up about caching. Why a new cache directory wasn't set up for each change. Until I realised we;re using Rail's built in method whcih doesn't generate such a directory.
+
+....So what's happening is....
+
+If your intention was for everyone to see the same three highlights on a given calendar day (for example, all visitors on 29 June see the same set, then it changes after midnight), we'd use a slightly different strategy. We'd make the cache key depend on the current date, such as "featured_highlights_2026-06-29", so a new cache is naturally created each day.
+
+
+We'll keep the current implementation for now.
