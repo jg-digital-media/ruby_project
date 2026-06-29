@@ -1,6 +1,6 @@
 # Discover Durham - Ruby Rails Project 
 
-Updated: `29/06/2025 - 13:48`
+Updated: `29/06/2025 - 15:02`
 
 ## Description
 
@@ -437,11 +437,12 @@ javascript_importmap_tags
 
 + `29/06/2026`
 
-  + I was hung up about caching. Why a new cache directory wasn't set up for each change. Until I realised we;re using Rail's built in method whcih doesn't generate such a directory.
+  + I started today getting... hung up about caching. I kept wondering why a new cache directory wasn't set up for each change. Until I realised we're using Rails built in method, which doesn't generate such a directory.
 
-....So what's happening is....
+  + So what's happening is Rails is handling the caching on its own. It's dependent on when a first request for the data being made by a user. What that means is that different people will see different data, but it will initiate a set of features every 24 hours after that. It works for the user, even if it wasn't quite what I intended.
 
-If your intention was for everyone to see the same three highlights on a given calendar day (for example, all visitors on 29 June see the same set, then it changes after midnight), we'd use a slightly different strategy. We'd make the cache key depend on the current date, such as "featured_highlights_2026-06-29", so a new cache is naturally created each day.
+  + What I intended for was a solution that gave everyone the same featured highlights for one given day ().e.g (29 June) then it changes after midnight. We'd use a slightly different strategy. We'd make the cache key depend on the current date, such as "featured_highlights_2026-06-29", so a new cache is naturally created each day.
 
+  + I'm not sure how that works at the moment (Using String maniupulation?), so we'll keep the current implementation for now.
 
-We'll keep the current implementation for now.
+  + I'm also having to rethink my deployment strategy after one attempt to deploy a static site to Cloudflare.
