@@ -1,6 +1,6 @@
 # Discover Durham - Ruby Rails Project 
 
-Updated: `29/06/2025 - 10:37`
+Updated: `29/06/2025 - 13:18`
 
 ## Description
 
@@ -12,7 +12,7 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
 
 ## Task List  
 
-### Tasks `105` Completed `57` 
+### Tasks `105` Completed `77` 
 
 [Back to Top](#)
 
@@ -93,7 +93,7 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
   + `TODO COMPLETED 19-06-2026:` Meta tags for Twitter cards for erb `_header.html.erb.`
   + `TODO COMPLETED 19-06-2026:` Need a simple but stylish map of Durham to include on homepage `index.php`
   + `TODO COMPLETED 23-06-2026:` Add Favicon for erb markup `_header.html.erb.`
-  + `TODO:` Solve Duplication of meta elements from header template- where do meta tags and header content go?
+  + `TODO:` Solve Duplication of meta elements from header template - where do meta tags and header content go?
     + `TODO:` BUG: some meta elements remain from the PHP version - remove or replace them with the ERB markup for Ruby
 
   + `TODO:` Check and review favicon on browser - ruby on rails
@@ -105,33 +105,33 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
   + `TODO:` Consider places for project deployment
   + `TODO:` Deploy project
 
-  + ### `TODO:` Deployment Checks and Production Checklist
+  + ### `TODO COMPLETED 29-06-2026:` Deployment Checks and Production Checklist
  
-    + `TODO:` Pages
-      + `TODO:` Home
-      + `TODO:` About
-      + `TODO:` History
-      + `TODO:` Attractions
-      + `TODO:` Events
-      + `TODO:` Coffee
-      + `TODO:` Links
-      + `TODO:` Disclaimer
-    + `TODO:` Assets
-      + `TODO:` CSS loading
-      + `TODO:` JavaScript loading
-      + `TODO:` Favicon loading
-      + `TODO:` Images loading
+    + `TODO COMPLETED 29-06-2026:` Pages
+      + `TODO COMPLETED 29-06-2026:` Home
+      + `TODO COMPLETED 29-06-2026:` About
+      + `TODO COMPLETED 29-06-2026:` History
+      + `TODO COMPLETED 29-06-2026:` Attractions
+      + `TODO COMPLETED 29-06-2026:` Events
+      + `TODO COMPLETED 29-06-2026:` Coffee
+      + `TODO COMPLETED 29-06-2026:` Links
+      + `TODO COMPLETED 29-06-2026:` Disclaimer
+    + `TODO COMPLETED 29-06-2026:` Assets
+      + `TODO COMPLETED 29-06-2026:` CSS loading
+      + `TODO COMPLETED 29-06-2026:` JavaScript loading
+      + `TODO COMPLETED 29-06-2026:` Favicon loading
+      + `TODO COMPLETED 29-06-2026:` Images loading
     `TODO:` SEO
       + `TODO:` Title tags
       + `TODO:` Meta descriptions
       + `TODO:` Open Graph tags
       + `TODO:` Twitter cards
       + `TODO:` Canonical URLs
-    + `TODO:` Rails
-      + `TODO:` No PHP includes remaining
-      + `TODO:` No .php links remaining
-      + `TODO:` All navigation uses Rails routes
-      + `TODO:` No 500 errors in logs
+    + `TODO COMPLETED 29-06-2026:` Rails
+      + `TODO COMPLETED 29-06-2026:` No PHP includes remaining
+      + `TODO COMPLETED 29-06-2026:` No .php links remaining
+      + `TODO COMPLETED 29-06-2026:` All navigation uses Rails routes
+      + `TODO COMPLETED 29-06-2026:` No 500 errors in logs
     + `TODO:` Git
       + `TODO:` .gitignore configured
       + `TODO:` Repository pushed to GitHub
