@@ -4,7 +4,7 @@
 *   
 *  By Jonnie Grieve @jg_digitalMedia - https://www.jonniegrieve.co.uk
 */
-/* Update Time:  16/06/2026 - 15:40 */
+/* Update Time:  29/06/2026 - 12:24 */
 * {
   padding: 0;
   margin: 0;
@@ -424,7 +424,7 @@ main .discover---durham--container-second {
   flex-direction: column;
   margin: 30px auto;
   align-items: center;
-  background: url("assets/images/Durham_UK_location_map_bg.png");
+  background: url("Durham_UK_location_map_bg.png");
   background: none;
   color: #800101;
   background-size: 100% 100%;
