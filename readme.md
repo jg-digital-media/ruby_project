@@ -1,6 +1,6 @@
 # Discover Durham - Ruby Rails Project 
 
-Updated: `29/06/2025 - 13:18`
+Updated: `29/06/2025 - 13:48`
 
 ## Description
 
@@ -12,7 +12,7 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
 
 ## Task List  
 
-### Tasks `105` Completed `77` 
+### Tasks `105` Completed `80` 
 
 [Back to Top](#)
 
@@ -122,10 +122,10 @@ Discover Durham App is a Ruby on Rails project that allows users to search for a
       + `TODO COMPLETED 29-06-2026:` Favicon loading
       + `TODO COMPLETED 29-06-2026:` Images loading
     `TODO:` SEO
-      + `TODO:` Title tags
-      + `TODO:` Meta descriptions
+      + `TODO COMPLETED 29-06-2026:` Title tags
+      + `TODO COMPLETED 29-06-2026:` Meta descriptions
       + `TODO:` Open Graph tags
-      + `TODO:` Twitter cards
+      + `TODO COMPLETED 29-06-2026:` Twitter cards
       + `TODO:` Canonical URLs
     + `TODO COMPLETED 29-06-2026:` Rails
       + `TODO COMPLETED 29-06-2026:` No PHP includes remaining
