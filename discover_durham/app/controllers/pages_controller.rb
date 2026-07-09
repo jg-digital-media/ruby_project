@@ -18,6 +18,7 @@ class PagesController < ApplicationController
         @current_url = "/"
 
         @favicon = "favicon.png"
+        
     end
 
     def about 
